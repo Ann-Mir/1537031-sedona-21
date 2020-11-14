@@ -7,7 +7,7 @@
   <body class="page__body">
     <header class="page-header">
       <a class="logo page-header__logo">
-        <img src="https://via.placeholder.com/101.7x84" alt="Герб города Седона">
+        <img src="https://via.placeholder.com/101.7x84" width="102" height="84" alt="Герб города Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -31,6 +31,7 @@
       <h1 class="visually-hidden">Информация о городе Седона</h1>
       <section class="promo">
         <h2 class="visually-hidden">Добро пожаловать в город Седона</h2>
+        <img class="promo__slogan" src="https://via.placeholder.com/282x214" width="282" height="214" alt="Welcome to the gordeous Sedona. «Because the Grand Canyon sucks!»">
       </section>
       <section class="features">
         <h2 class="visually-hidden">Почему стоит посетить Седону</h2>
@@ -39,11 +40,11 @@
           <p class="into__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <ol class="features-list">
-          <li class="features-list__item">
+          <li class="features-list__item--highlight">
             <h3 class="features-list__title">Настоящий городок</h3>
             <p class="features-list__description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             <a href="#">
-              <img class="features-list__photo" src="https://via.placeholder.com/300x260" alt="Фото городской улицы">
+              <img class="features-list__photo" src="https://via.placeholder.com/300x260" width="300" height="260" alt="Фото городской улицы">
             </a>
             <ul class="features-sublist">
               <li class="features-sublist__item">
@@ -60,11 +61,11 @@
               </li>
             </ul>
           </li>
-          <li class="features-list__item">
+          <li class="features-list__item--highlight">
             <h3 class="features-list__title">Там есть мост дьявола</h3>
             <p class="features-list__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             <a href="#">
-              <img class="features-list__photo" src="https://via.placeholder.com/300x260" alt="Фото моста дьявола">
+              <img class="features-list__photo" src="https://via.placeholder.com/300x260" width="300" height="260" alt="Фото моста дьявола">
             </a>
           </li>
           <li class="features-list__item">
@@ -88,25 +89,28 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">город Седона на карте</h2>
+        <img class="map__map-image" src="https://via.placeholder.com/320x350" width="320" height="350" alt="Седона на карте">
       </section>
     </main>
     <footer class="page-footer">
-      <p class="sedona-hashtag">#VISITSEDONA</p>
-      <ul class="social-list">
-        <li class="social-list__item">
+      <p class="page-footer__sedona-hashtag sedona-hashtag">#VISITSEDONA</p>
+      <ul class="page-footer__social-list social-list">
+        <li class="social-list__item--twitter">
           <span class="visually-hidden">Мы в Твиттере</span>
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item--facebook">
           <span class="visually-hidden">Мы в Фейсбуке</span>
 
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item--youtube">
           <span class="visually-hidden">Мы в Youtube</span>
         </li>
       </ul>
-      <div class="copyright">
+      <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт разработчика HTML Academy" target="_blank"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт разработчика HTML Academy" target="_blank">
+          <img class="copyright__logo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип HTML Academy">
+        </a>
       </div>
     </footer>
   </body>
