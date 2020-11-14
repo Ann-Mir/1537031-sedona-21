@@ -2,12 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона - Форма поиска отеля</title>
   </head>
   <body>
     <header class="page-header">
       <a class="logo page-header__logo">
-        <img src="https://via.placeholder.com/101.7x84" alt="Герб города Седона">
+        <img src="https://via.placeholder.com/101.7x84" width="102" height="84" alt="Герб города Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -29,7 +29,7 @@
     </header>
     <main>
       <section class="promo promo--inner">
-        <!--Картинка + надпись Седона-->
+        <img class="promo__slogan--inner" src="https://via.placeholder.com/229x39" width="229" height="39" alt="Senoda">
       </section>
       <section class="feedback">
         <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -111,22 +111,24 @@
       </section>
     </main>
     <footer class="page-footer">
-      <p class="sedona-hashtag">#VISITSEDONA</p>
+      <p class="page-footer__sedona-hashtag sedona-hashtag">#VISITSEDONA</p>
       <ul class="social-list">
-        <li class="social-list__item">
+        <li class="social-list__item--twitter">
           <span class="visually-hidden">Мы в Твиттере</span>
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item--facebook">
           <span class="visually-hidden">Мы в Фейсбуке</span>
 
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item--youtube">
           <span class="visually-hidden">Мы в Youtube</span>
         </li>
       </ul>
-      <div class="copyright">
+      <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт разработчика HTML Academy" target="_blank"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт разработчика HTML Academy" target="_blank">
+          <img class="copyright__logo" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип HTML Academy">
+        </a>
       </div>
     </footer>
   </body>
