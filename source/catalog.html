@@ -4,25 +4,25 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body class="page__body">
+  <body class="page page__body">
     <header class="page-header">
-      <a class="logo page-header__logo">
-        <img src="https://via.placeholder.com/101.7x84" alt="Герб города Седона">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/101.7x84" width="102" height="84" alt="Герб города Седона">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню или закрыть открытое меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">Главная</a>
+            <a class="site-list__link site-list__link--main" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Фото и видео</a>
+            <a class="site-list__link site-list__link--photos" href="#">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Форма отзыва</a>
+            <a class="site-list__link site-list__link--feedback" href="#">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/">HTML Academy</a>
+            <a class="site-list__link site-list__link--made-by" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -86,21 +86,23 @@
       </section>
     </main>
     <footer class="page-footer">
-      <p class="sedona-hashtag">#VISITSEDONA</p>
+      <p class="page-footer__sedona-hashtag sedona-hashtag">#VISITSEDONA</p>
       <ul class="social-list">
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item--twitter">
           <span class="visually-hidden">Мы в Твиттере</span>
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item--facebook">
           <span class="visually-hidden">Мы в Фейсбуке</span>
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item social-list__item--youtube">
           <span class="visually-hidden">Мы в Youtube</span>
         </li>
       </ul>
-      <div class="copyright">
+      <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт разработчика HTML Academy" target="_blank"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт разработчика HTML Academy" target="_blank">
+          <img class="copyright__logo" src="https://via.placeholder.com/27x35" width="27" height="35" alt="Логотип HTML Academy">
+        </a>
       </div>
     </footer>
   </body>
