@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Форма поиска отеля</title>
   </head>
-  <body>
+  <body class="page page__body">
     <header class="page-header">
       <a class="logo page-header__logo">
         <img src="https://via.placeholder.com/101.7x84" width="102" height="84" alt="Герб города Седона">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню или закрыть открытое меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="#">Главная</a>
@@ -29,15 +29,15 @@
     </header>
     <main>
       <section class="promo promo--inner">
-        <img class="promo__slogan promo__slogan--inner" src="https://via.placeholder.com/229x39" width="229" height="39" alt="Senoda">
+        <img class="promo__slogan promo__slogan--inner" src="https://via.placeholder.com/229x39" width="229" height="39" alt="Sedona">
       </section>
       <section class="feedback">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
         <div class="feedback__intro intro">
           <p class="feedback__title intro__title">Оставьте свой отзыв</p>
           <p class="feedback__description intro__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
           <fieldset class="feedback-form__fieldset feedback-form__fieldset--user user-info">
             <legend class="feedback-form__legend user-info__legend">Представьтесь:</legend>
             <p class="feedback-form__paragraph feedback-form__paragraph--user user-info__paragraph">
@@ -82,7 +82,7 @@
             </ul>
           </fieldset>
           <fieldset class="feedback-form__fieldset visited-sights">
-            <legend class="feedback-form__legend visited-sights__legend">Ваше общее впечатление:</legend>
+            <legend class="feedback-form__legend visited-sights__legend">Посещенные достопримечательности:</legend>
             <ul class="feedback-form__list visited-sights__list">
               <li class="feedback-form__option visited-sights__option">
                 <input class="feedback-form__input feedback-form__input--choice visited-sights__input" type="checkbox" name="devil-bridge" id="devil_bridge" value="devil-bridge" checked>
