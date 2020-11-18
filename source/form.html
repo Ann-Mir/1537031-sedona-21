@@ -13,16 +13,16 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню или закрыть открытое меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--main" href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--photos" href="#">Фото и видео</a>
+            <a class="site-list__link" href="#">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--feedback">Форма отзыва</a>
+            <a class="site-list__link">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--made-by" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -32,78 +32,78 @@
       </section>
       <section class="feedback">
         <div class="feedback__intro intro">
-          <p class="feedback__title intro__title">Оставьте свой отзыв</p>
-          <p class="feedback__description intro__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="intro__title">Оставьте свой отзыв</p>
+          <p class="intro__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
           <h2 class="visually-hidden">Форма обратной связи</h2>
-          <fieldset class="feedback-form__fieldset feedback-form__fieldset--user user-info">
-            <legend class="feedback-form__legend user-info__legend">Представьтесь:</legend>
-            <p class="feedback-form__paragraph feedback-form__paragraph--user user-info__paragraph">
-              <label class="feedback-form__label feedback-form__label--user user-info__label" for="user_name">Имя&#42;:</label>
-              <input class="feedback-form__input feedback-form__input--user user-info__input" type="text" name="user-name" id="user_name" placeholder="Петр">
+          <fieldset class="feedback-form__fieldset fieldset fieldset--user-info">
+            <legend class="fieldset__legend">Представьтесь:</legend>
+            <p class="fieldset__paragraph fieldset__paragraph--user-info">
+              <label class="fieldset__label" for="user_name">Имя&#42;:</label>
+              <input class="fieldset__input fieldset__input--user-info" type="text" name="user-name" id="user_name" placeholder="Петр">
             </p>
-            <p class="feedback-form__paragraph feedback-form__paragraph--user user-info__paragraph">
-              <label class="feedback-form__label feedback-form__label--user user-info__label" for="user_surname">Фамилия&#42;:</label>
-              <input class="feedback-form__input feedback-form__input--user user-info__input" type="text" name="user-surname" id="user_surname" placeholder="Иванов">
+            <p class="fieldset__paragraph fieldset__paragraph--user-info">
+              <label class="fieldset__label" for="user_surname">Фамилия&#42;:</label>
+              <input class="fieldset__input fieldset__input--user-info" type="text" name="user-surname" id="user_surname" placeholder="Иванов">
             </p>
-            <p class="feedback-form__paragraph feedback-form__paragraph--user user-info__paragraph">
-              <label class="feedback-form__label feedback-form__label--user user-info__label" for="user_middle-name">Отчество:</label>
-              <input class="feedback-form__input feedback-form__input--user user-info__input" type="text" name="user-middle-name" id="user_middle-name" placeholder="Александрович">
-            </p>
-          </fieldset>
-          <fieldset class="feedback-form__fieldset feedback-form__fieldset--user user-contacts">
-            <legend class="feedback-form__legend  user-contacts__legend">Контактная информация:</legend>
-            <p class="feedback-form__paragraph feedback-form__paragraph--user user-contacts__paragraph">
-              <label class="feedback-form__label feedback-form__label--user user-contacts__label" for="user_phone">Контактный телефон&#42;:</label>
-              <input class="feedback-form__input feedback-form__input--user user-contacts__input" type="tel" name="user-phone" id="user_phone" placeholder="Введите телефон">
-            </p>
-            <p class="feedback-form__paragraph user-contacts__paragraph">
-              <label class="feedback-form__label feedback-form__label--user user-contacts__label" for="user_email">Электронная почта&#42;:</label>
-              <input class="feedback-form__input feedback-form__input--user user-contacts__input" type="email" name="user-email" id="user_email" placeholder="Введите e-mail">
+            <p class="fieldset__paragraph fieldset__paragraph--user-info">
+              <label class="fieldset__label" for="user_middle-name">Отчество:</label>
+              <input class="fieldset__input fieldset__input--user-info" type="text" name="user-middle-name" id="user_middle-name" placeholder="Александрович">
             </p>
           </fieldset>
-          <fieldset class="feedback-form__fieldset feedback-form__fieldset--choice trip-rate">
-            <legend class="feedback-form__legend trip-rate__legend">Ваше общее впечатление:</legend>
-            <ul class="feedback-form__list trip-rate__list">
-              <li class="feedback-form__option trip-rate__option">
-                <input class="feedback-form__input feedback-form__input--choice trip-rate__input" type="radio" name="rate" id="good" value="good" checked>
-                <label class="feedback-form__label feedback-form__label--choice trip-rate__label" for="good">Скорее положительное</label>
+          <fieldset class="feedback-form__fieldset fieldset fieldset--user-contacts">
+            <legend class="fieldset__legend">Контактная информация:</legend>
+            <p class="fieldset__paragraph fieldset__paragraph--user-contacts">
+              <label class="fieldset__label" for="user_phone">Контактный телефон&#42;:</label>
+              <input class="fieldset__input fieldset__input--user-contacts" type="tel" name="user-phone" id="user_phone" placeholder="Введите телефон">
+            </p>
+            <p class="fieldset__paragraph fieldset__paragraph--user-contacts">
+              <label class="fieldset__label" for="user_email">Электронная почта&#42;:</label>
+              <input class="fieldset__input fieldset__input--user-contacts" type="email" name="user-email" id="user_email" placeholder="Введите e-mail">
+            </p>
+          </fieldset>
+          <fieldset class="feedback-form__fieldset fieldset fieldset--trip-rate">
+            <legend class="fieldset__legend">Ваше общее впечатление:</legend>
+            <ul class="fieldset__list fieldset__list--trip-rate">
+              <li class="fieldset__option">
+                <input class="fieldset__input visually-hidden" type="radio" name="rate" id="good" value="good" checked>
+                <label class="fieldset__label fieldset__label--trip-rate" for="good">Скорее положительное</label>
               </li>
-              <li class="feedback-form__option trip-rate__option">
-                <input class="feedback-form__input feedback-form__input--choice trip-rate__input" type="radio" name="rate" id="negative" value="negative">
-                <label class="feedback-form__label feedback-form__label--choice trip-rate__label" for="negative">Скорее отрицательное</label>
+              <li class="fieldset__option">
+                <input class="fieldset__input visually-hidden" type="radio" name="rate" id="negative" value="negative">
+                <label class="fieldset__label fieldset__label--trip-rate" for="negative">Скорее отрицательное</label>
               </li>
-              <li class="feedback-form__option trip-rate__option">
-                <input class="feedback-form__input feedback-form__input--choice trip-rate__input" type="radio" name="rate" id="not_sure" value="not-sure">
-                <label class="feedback-form__label feedback-form__label--choice trip-rate__label" for="not_sure">Затрудняюсь ответить</label>
+              <li class="fieldset__option">
+                <input class="fieldset__input visually-hidden" type="radio" name="rate" id="not_sure" value="not-sure">
+                <label class="fieldset__label fieldset__label--trip-rate" for="not_sure">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-form__fieldset visited-sights">
-            <legend class="feedback-form__legend visited-sights__legend">Посещенные достопримечательности:</legend>
-            <ul class="feedback-form__list visited-sights__list">
-              <li class="feedback-form__option visited-sights__option">
-                <input class="feedback-form__input feedback-form__input--choice visited-sights__input" type="checkbox" name="devil-bridge" id="devil_bridge" value="devil-bridge" checked>
-                <label class="feedback-form__label feedback-form__label--choice visited-sights__label" for="devil_bridge">Мост Дьявола</label>
+          <fieldset class="feedback-form__fieldset fieldset fieldset--visited-sights">
+            <legend class="fieldset__legend">Посещенные достопримечательности:</legend>
+            <ul class="fieldset__list">
+              <li class="fieldset__option">
+                <input class="fieldset__input visually-hidden" type="checkbox" name="devil-bridge" id="devil_bridge" value="devil-bridge" checked>
+                <label class="fieldset__label fieldset__label--visited-sights" for="devil_bridge">Мост Дьявола</label>
               </li>
-              <li class="feedback-form__option visited-sights__option">
-                <input class="feedback-form__input feedback-form__input--choice visited-sights__input" type="checkbox" name="bell-rock" id="bell_rock" value="bell-rock" checked>
-                <label class="feedback-form__label feedback-form__label--choice visited-sights__label" for="bell_rock">Гора-Колокол</label>
+              <li class="fieldset__option">
+                <input class="fieldset__input visually-hidden" type="checkbox" name="bell-rock" id="bell_rock" value="bell-rock" checked>
+                <label class="fieldset__label fieldset__label--visited-sights" for="bell_rock">Гора-Колокол</label>
               </li>
-              <li class="feedback-form__option visited-sights__option">
-                <input class="feedback-form__input feedback-form__input--choice visited-sights__input" type="checkbox" name="slide-park" id="slide_park" value="slide-park" checked>
-                <label class="feedback-form__label feedback-form__label--choice visited-sights__label" for="slide_park">Слайд-Парк</label>
+              <li class="fieldset__option">
+                <input class="fieldset__input visually-hidden" type="checkbox" name="slide-park" id="slide_park" value="slide-park" checked>
+                <label class="fieldset__label fieldset__label--visited-sights" for="slide_park">Слайд-Парк</label>
               </li>
-              <li class="feedback-form__option visited-sights__option">
-                <input class="feedback-form__input feedback-form__input--choice visited-sights__input" type="checkbox" name="red-rocks" id="red_rocks" value="red-rocks">
-                <label class="feedback-form__label feedback-form__label--choice visited-sights__label" for="red_rocks">Красные Скалы</label>
+              <li class="fieldset__option">
+                <input class="fieldset__input visually-hidden" type="checkbox" name="red-rocks" id="red_rocks" value="red-rocks">
+                <label class="fieldset__label fieldset__label--visited-sights" for="red_rocks">Красные Скалы</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-form__review review">
-            <legend class="feedback-form__legend review__legend">Опишите свои эмоции:</legend>
-            <textarea class="review__textarea" id="review" name="review">Опишите подробно все свои восторги</textarea>
+          <fieldset class="feedback-form__review fieldset fieldset--review">
+            <legend class="fieldset__legend">Опишите свои эмоции:</legend>
+            <textarea class="fieldset__textarea" id="review" name="review">Опишите подробно все свои восторги</textarea>
           </fieldset>
           <button class="feedback-form__button" type="submit">Отправить отзыв</button>
         </form>
