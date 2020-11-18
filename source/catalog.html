@@ -46,7 +46,7 @@
               <h3 class="photo-article__description">Неродные просторы</h3>
               <p class="photo-article__author">Автор фото: Борис</p>
               <div class="photo-article__likes-container likes-container">
-                <button class="likes-container__button" type="button"></button>
+                <button class="likes-container__button likes-button" type="button"></button>
                 <p class="likes-container__counter">1350</p>
               </div>
             </article>
@@ -59,7 +59,7 @@
               <h3 class="photo-article__description">Местная растительность</h3>
               <p class="photo-article__author">Автор фото: Сергей</p>
               <div class="photo-article__likes-container likes-container">
-                <button class="likes-container__button" type="button"></button>
+                <button class="likes-container__button likes-button" type="button"></button>
                 <p class="likes-container__counter">143</p>
               </div>
             </article>
@@ -72,7 +72,7 @@
               <h3 class="photo-article__description">Дорога на север</h3>
               <p class="photo-article__author">Автор фото: Петр</p>
               <div class="photo-article__likes-container likes-container">
-                <button class="likes-container__button" type="button"></button>
+                <button class="likes-container__button likes-button" type="button"></button>
                 <p class="likes-container__counter">96</p>
               </div>
             </article>
@@ -85,7 +85,7 @@
               <h3 class="photo-article__description">Мост Дьявола</h3>
               <p class="photo-article__author">Автор фото: Антон</p>
               <div class="photo-article__likes-container likes-container">
-                <button class="likes-container__button" type="button"></button>
+                <button class="likes-container__button likes-button" type="button"></button>
                 <p class="likes-container__counter">254</p>
               </div>
             </article>
@@ -98,9 +98,18 @@
           <p class="intro__title">Все еще сомневаетесь?</p>
           <p class="intro__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <video class="promo-video__movie" width="320" height="201" poster="https://via.placeholder.com/320x201" controls>
+        <video class="promo-video__movie" width="320" height="201" poster="https://via.placeholder.com/320x201">
           <source src="https://via.placeholder.com/320x201" type="video/mp4">
         </video>
+        <div class="promo-video__controls video-controls">
+          <div class="video-controls__scale">
+            <div class="video-controls__bar"></div>
+          </div>
+          <div class="video-controls__toggle" tabindex="0" arial-label="Кнопка прокрутки видео"></div>
+          <button class="video-controls__restart" type="button" aria-label="Посмотреть видео еще раз"></button>
+          <button class="video-controls__subtitles" type="button" aria-label="Включить субтитры"></button>
+          <button class="video-controls__full-screen" type="button" aria-label="Открыть видео на полный экран"></button>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
