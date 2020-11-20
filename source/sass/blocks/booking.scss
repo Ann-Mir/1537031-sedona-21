@@ -1,0 +1,20 @@
+.booking {
+  text-align: center;
+  padding: 33px 20px 49px 20px;
+}
+
+.booking__title {
+  @include font($titles-big-font-size, 26px, bold);
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+.booking__text {
+  @include font($basic-font-size, 24px, normal);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.booking__link {
+  width: 100%;
+}
