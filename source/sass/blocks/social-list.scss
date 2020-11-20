@@ -1,0 +1,11 @@
+.social-list {
+  @include list-style-none;
+}
+
+.socila-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+}

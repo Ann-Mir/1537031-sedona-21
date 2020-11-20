@@ -1,7 +1,10 @@
 .features-sublist {
   @include list-style-none;
+  color: $basic-font-color;
   text-align: left;
   background-color: $background-basic;
+  padding-top: 26px;
+  padding-bottom: 35px;
 }
 
 .features-sublist__title {

@@ -3,15 +3,17 @@
   text-align: center;
   color: $extra-font-color;
   background-color: $basic-button-color;
-  display: inline-block;
+  display: block;
   border: none;
-  vertical-align: middle;
+  box-sizing: border-box;
   padding-top: 14px;
   padding-bottom: 18px;
+
   &:hover,
   &:focus {
     background-color: $basic-button-hover;
   }
+
   &:active {
     background-color: $basic-button-active;
   }

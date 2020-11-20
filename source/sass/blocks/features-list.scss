@@ -1,16 +1,24 @@
 .features-list {
   @include list-style-none;
+  background-color: $background-features;
 }
 
 .features-list__item {
   text-align: center;
-  background-color: $background-features;
   margin-top: 0;
+  padding-top: 26px;
+  padding-bottom: 24px;
 }
 
 .features-list__item--highlighted {
   color: $extra-font-color;
   background-color: $background-highlighted;
+  padding-top: 39px;
+  padding-bottom: 35px;
+}
+
+.features-list__item--house {
+  padding-bottom: 0;
 }
 
 .features-list__title {
