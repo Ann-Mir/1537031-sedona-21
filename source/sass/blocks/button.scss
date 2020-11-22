@@ -1,8 +1,10 @@
 .button {
   @include font($basic-buttons-font-size, 26px, bold);
   text-align: center;
+  text-transform: uppercase;
   color: $extra-font-color;
   background-color: $basic-button-color;
+
   display: block;
   border: none;
   box-sizing: border-box;

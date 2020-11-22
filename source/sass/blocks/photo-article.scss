@@ -1,0 +1,13 @@
+.photo-article {
+  padding: 22px 0 21px 0;
+}
+
+.photo-article__description {
+  @include font($basic-font-size, 24px, bold);
+  margin: 0;
+}
+
+.photo-article__author {
+  @include font($basic-font-size, 24px, normal);
+  text-transform: none;
+}

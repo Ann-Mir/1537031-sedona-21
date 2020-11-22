@@ -47,7 +47,7 @@
               <h3 class="photo-article__description">Неродные просторы</h3>
               <p class="photo-article__author">Автор фото: Борис</p>
               <div class="photo-article__likes-container likes-container">
-                <button class="likes-container__button likes-button" type="button">Поставить лайк или убрать лайк</button>
+                <button class="likes-container__button likes-button" type="button" aria-label="Поставить лайк или убрать лайк"></button>
                 <p class="likes-container__counter">1350</p>
               </div>
             </article>
@@ -60,7 +60,7 @@
               <h3 class="photo-article__description">Местная растительность</h3>
               <p class="photo-article__author">Автор фото: Сергей</p>
               <div class="photo-article__likes-container likes-container">
-                <button class="likes-container__button likes-button" type="button">Поставить лайк или убрать лайк</button>
+                <button class="likes-container__button likes-button" type="button" aria-label="Поставить лайк или убрать лайк"></button>
                 <p class="likes-container__counter">143</p>
               </div>
             </article>
@@ -73,7 +73,7 @@
               <h3 class="photo-article__description">Дорога на север</h3>
               <p class="photo-article__author">Автор фото: Петр</p>
               <div class="photo-article__likes-container likes-container">
-                <button class="likes-container__button likes-button" type="button">Поставить лайк или убрать лайк</button>
+                <button class="likes-container__button likes-button" type="button" aria-label="Поставить лайк или убрать лайк"></button>
                 <p class="likes-container__counter">96</p>
               </div>
             </article>
@@ -86,7 +86,7 @@
               <h3 class="photo-article__description">Мост Дьявола</h3>
               <p class="photo-article__author">Автор фото: Антон</p>
               <div class="photo-article__likes-container likes-container">
-                <button class="likes-container__button likes-button" type="button">Поставить лайк или убрать лайк</button>
+                <button class="likes-container__button likes-button" type="button" aria-label="Поставить лайк или убрать лайк"></button>
                 <p class="likes-container__counter">254</p>
               </div>
             </article>
@@ -115,15 +115,21 @@
     </main>
     <footer class="page-footer">
       <p class="page-footer__sedona-hashtag sedona-hashtag">#VISITSEDONA</p>
-      <ul class="social-list">
-        <li class="social-list__item social-list__item--twitter">
-          <span class="visually-hidden">Мы в Твиттере</span>
+      <ul class="page-footer__social-list social-list">
+        <li class="social-list__item">
+          <a class="socila-list__link button socila-list__link--twitter">
+            <span class="visually-hidden">Мы в Твиттере</span>
+          </a>
         </li>
-        <li class="social-list__item social-list__item--facebook">
-          <span class="visually-hidden">Мы в Фейсбуке</span>
+        <li class="social-list__item">
+          <a class="socila-list__link button socila-list__link--facebook">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+          </a>
         </li>
-        <li class="social-list__item social-list__item--youtube">
-          <span class="visually-hidden">Мы в Youtube</span>
+        <li class="social-list__item">
+          <a class="socila-list__link button socila-list__link--youtube">
+            <span class="visually-hidden">Мы в Youtube</span>
+          </a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
