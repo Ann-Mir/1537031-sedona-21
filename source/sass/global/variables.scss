@@ -1,38 +1,38 @@
 //Colors
 $color-black: #000000;
-$color-black-opacity-medium: rgba(0, 0, 0, 0.30);
-$color-black-opacity-low: rgba(0, 0, 0, 0.60);
+$color-black-opacity-medium: rgba(0, 0, 0, 0.3);
+$color-black-opacity-low: rgba(0, 0, 0, 0.6);
 $color-white: #ffffff;
 $color-white-opacity-high: rgba(1, 1, 1, 0.2);
-$color-white-opacity-medium: rgba(1, 1, 1, 0.30);
-$color-white-opacity-low: rgba(1, 1, 1, 0.60);
-$color-white-smoke: #F2F2F2;
-$color-light-blue: #81B3D2;
-$color-bright-blue: #669EC0;
-$color-dark-blue: #5496BD;
-$color-light-grey: #EEEEEE;
-$color-dark-grey: #E6E6E6;
-$color-darken-grey: #5C6870;
+$color-white-opacity-medium: rgba(1, 1, 1, 0.3);
+$color-white-opacity-low: rgba(1, 1, 1, 0.6);
+$color-white-smoke: #f2f2f2;
+$color-light-blue: #81b3d2;
+$color-bright-blue: #669ec0;
+$color-dark-blue: #5496bd;
+$color-light-grey: #eeeeee;
+$color-dark-grey: #e6e6e6;
+$color-darken-grey: #5c6870;
 $color-dark-charcoal: #333333;
 
 //Basic
-$basic-font-family: "PT Sans", Arial, sans-serif;
+$basic-font-family: "PT Sans", "Arial", sans-serif;
 
 $basic-font-color: $color-black;
 $extra-font-color: $color-white;
 
 $basic-font-size: 14px;
 $titles-font-size: 18px;
+$titles-big-font-size: 21px;
 $basic-buttons-font-size: 21px;
 
 
 $background-basic: $color-white;
 $background-highlighted: $color-light-blue;
-$background-features: $ccolor-light-grey;
+$background-features: $color-light-grey;
 $background-form-input: $color-white-smoke;
 
 $basic-button-color: $color-light-blue;
+$basic-button-hover: $color-bright-blue;
+$basic-button-active: $color-dark-blue;
 $video-controls-color: $color-darken-grey;
-
-
-

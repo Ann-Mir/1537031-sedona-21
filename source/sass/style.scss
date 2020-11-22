@@ -1,1 +1,18 @@
-// Начните писать стили здесь
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/variables.scss";
+@import "global/mixin.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/site-list.scss";
+@import "blocks/features-list.scss";
+@import "blocks/features-sublist.scss";
+@import "blocks/booking.scss";
+@import "blocks/button.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/sedona-hashtag.scss";
+@import "blocks/copyright.scss"
