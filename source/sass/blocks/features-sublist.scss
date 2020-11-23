@@ -1,0 +1,20 @@
+.features-sublist {
+  @include list-style-none;
+  color: $basic-font-color;
+  text-align: left;
+  background-color: $background-basic;
+  padding-top: 26px;
+  padding-bottom: 35px;
+}
+
+.features-sublist__title {
+  @include font($titles-font-size, 26px, bold);
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+
+.features-sublist__description {
+  @include font($basic-font-size, 21px, normal);
+  margin-top: 0;
+  margin-bottom: 0;
+}

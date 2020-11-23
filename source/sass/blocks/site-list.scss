@@ -1,0 +1,25 @@
+.site-list {
+  @include list-style-none;
+  background-color: $background-highlighted;
+}
+
+.site-list__item {
+  &:hover,
+  &:focus {
+    background-color: $basic-button-hover;
+  }
+
+  &:active {
+    background-color: $basic-button-active;
+  }
+}
+
+.site-list__link {
+  @include font($titles-font-size, 40px, bold);
+  color: $extra-font-color;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}

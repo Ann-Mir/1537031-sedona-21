@@ -1,0 +1,15 @@
+.intro {
+  text-align: center;
+}
+
+.intro__title {
+  @include font($titles-font-size, 26px, bold);
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+.intro__description {
+  @include font($basic-font-size, 26px, normal);
+  margin-top: 0;
+  margin-bottom: 0;
+}

@@ -1,0 +1,46 @@
+.fieldset {
+  &--user-info {
+    padding: 20px 0 25px 0;
+  }
+
+  &--user-contacts {
+    padding: 20px 0 28px 0;
+  }
+
+  &--trip-rate {
+    padding: 20px 0 27px 0;
+  }
+
+  &--visited-sights {
+    padding: 15px 0 21px 0;
+  }
+
+  &fieldset--review {
+    padding: 20px 0 51px 0;
+  }
+}
+
+.fieldset__legend {
+  @include font($titles-font-size, 26px, bold);
+}
+
+.fieldset__label {
+  @include font($basic-font-size, 26px, normal);
+
+  &--trip-rate,
+  &--visited-sights {
+    @include font($titles-font-size, 26px, bold);
+    text-transform: none;
+  }
+}
+
+.fieldset__input::placeholder,
+.fieldset__textarea {
+  @include font($titles-font-size, 26px, bold);
+  text-transform: none;
+  color: $basic-font-color;
+}
+
+.fieldset__list {
+  @include list-style-none;
+}

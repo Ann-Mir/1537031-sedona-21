@@ -1,0 +1,22 @@
+.button {
+  @include font($basic-buttons-font-size, 26px, bold);
+  text-align: center;
+  text-transform: uppercase;
+  color: $extra-font-color;
+  background-color: $basic-button-color;
+
+  display: block;
+  border: none;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 18px;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-button-hover;
+  }
+
+  &:active {
+    background-color: $basic-button-active;
+  }
+}

@@ -1,0 +1,12 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  font-family: $basic-font-family;
+  font-size: $basic-font-size;
+  text-transform: uppercase;
+  color: $basic-font-color;
+
+  background-color: $background-basic;
+}
