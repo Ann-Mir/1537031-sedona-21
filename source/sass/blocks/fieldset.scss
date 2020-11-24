@@ -34,8 +34,16 @@
   }
 }
 
+.fieldset__input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  @include font($titles-font-size, 26px, bold);
+  text-transform: none;
+  color: $basic-font-color;
+}
+
 .fieldset__input::placeholder,
 .fieldset__textarea {
+  font-family: "PT Sans", "Arial", sans-serif;
   @include font($titles-font-size, 26px, bold);
   text-transform: none;
   color: $basic-font-color;
