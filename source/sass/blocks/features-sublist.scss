@@ -14,7 +14,8 @@
 }
 
 .features-sublist__description {
-  @include font($basic-font-size, 21px, normal);
+  @include plain-text;
+  line-height: 21px;
   margin-top: 0;
   margin-bottom: 0;
 }

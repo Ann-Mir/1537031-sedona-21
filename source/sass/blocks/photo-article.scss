@@ -8,6 +8,7 @@
 }
 
 .photo-article__author {
-  @include font($basic-font-size, 24px, normal);
+  @include plain-text;
+  line-height: 24px;
   text-transform: none;
 }

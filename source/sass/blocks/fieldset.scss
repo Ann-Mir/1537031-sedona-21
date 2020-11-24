@@ -25,17 +25,19 @@
 }
 
 .fieldset__label {
-  @include font($basic-font-size, 26px, normal);
+  @include plain-text;
+  line-height: 26px;
 
   &--trip-rate,
   &--visited-sights {
     @include font($titles-font-size, 26px, bold);
+    color: $basic-font-color;
     text-transform: none;
   }
 }
 
 .fieldset__input {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: $basic-font-family;
   @include font($titles-font-size, 26px, bold);
   text-transform: none;
   color: $basic-font-color;
@@ -43,7 +45,7 @@
 
 .fieldset__input::placeholder,
 .fieldset__textarea {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: $basic-font-family;
   @include font($titles-font-size, 26px, bold);
   text-transform: none;
   color: $basic-font-color;

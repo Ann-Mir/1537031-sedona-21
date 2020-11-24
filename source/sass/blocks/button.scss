@@ -1,5 +1,5 @@
 .button {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: $basic-font-family;
   @include font($basic-buttons-font-size, 26px, bold);
   text-align: center;
   text-transform: uppercase;

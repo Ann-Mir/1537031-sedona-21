@@ -10,6 +10,12 @@
   padding-bottom: 24px;
 }
 
+.features-list__number,
+.features-list__description {
+  @include plain-text;
+  line-height: 21px;
+}
+
 .features-list__item--highlighted {
   color: $extra-font-color;
   background-color: $background-highlighted;
@@ -24,11 +30,6 @@
 .features-list__title {
   @include font($titles-font-size, 26px, bold);
   margin-bottom: 21px;
-}
-
-.features-list__number,
-.features-list__description {
-  @include font($basic-font-size, 21px, normal);
 }
 
 .features-list__number,

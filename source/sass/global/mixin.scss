@@ -9,3 +9,9 @@
   line-height: $line-height;
   font-weight: $weight;
 }
+
+@mixin plain-text {
+  font-size: $basic-font-size;
+  font-weight: normal;
+  color: $plain-text-color;
+}

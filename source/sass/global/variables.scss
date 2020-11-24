@@ -1,3 +1,8 @@
+//Viewports
+$tablet-width: 768px;
+$desktop-width: 1280px;
+$mobile-width-only: 767px;
+
 //Colors
 $color-black: #000000;
 $color-black-opacity-medium: rgba(0, 0, 0, 0.3);
@@ -6,6 +11,7 @@ $color-white: #ffffff;
 $color-white-opacity-high: rgba(1, 1, 1, 0.2);
 $color-white-opacity-medium: rgba(1, 1, 1, 0.3);
 $color-white-opacity-low: rgba(1, 1, 1, 0.6);
+$mercury: #e7e5e5;
 $color-white-smoke: #f2f2f2;
 $color-light-blue: #81b3d2;
 $color-bright-blue: #669ec0;
