@@ -1,5 +1,6 @@
 .fieldset {
   background-color: $background-basic;
+
   &--user-info {
     padding: 20px 0 25px 0;
   }
@@ -39,6 +40,7 @@
 
 .fieldset__input {
   font-family: $basic-font-family;
+
   @include font($titles-font-size, 26px, bold);
   text-transform: none;
   color: $basic-font-color;
@@ -47,6 +49,7 @@
 .fieldset__input::placeholder,
 .fieldset__textarea {
   font-family: $basic-font-family;
+
   @include font($titles-font-size, 26px, bold);
   text-transform: none;
   color: $basic-font-color;

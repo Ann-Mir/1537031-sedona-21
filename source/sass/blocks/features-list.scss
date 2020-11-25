@@ -1,6 +1,36 @@
 .features-list {
   @include list-style-none;
   background-color: $background-features;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas: "f1 f1 f1"
+      "f1 f1 f1"
+      "f2 f2 f2"
+      "f3 f4 f5";
+  }
+}
+
+.features-list__item-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.features-list__top-container {
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+  }
+}
+
+.features-list__img-container {
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }
 
 .features-list__item {
@@ -8,6 +38,24 @@
   margin-top: 0;
   padding-top: 26px;
   padding-bottom: 24px;
+
+  &:nth-child(3) {
+    @media (min-width: $tablet-width) {
+      grid-area: f3;
+    }
+  }
+
+  &:nth-child(4) {
+    @media (min-width: $tablet-width) {
+      grid-area: f4;
+    }
+  }
+
+  &:nth-child(5) {
+    @media (min-width: $tablet-width) {
+      grid-area: f5;
+    }
+  }
 }
 
 .features-list__number,
@@ -23,8 +71,28 @@
   padding-bottom: 35px;
 }
 
+.features-list__item--highlighted .features-list__number,
+.features-list__item--highlighted .features-list__description {
+  color: $extra-font-color;
+}
+
 .features-list__item--house {
   padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-area: f1;
+  }
+}
+
+.features-list__item--rocks {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    grid-area: f2;
+    flew-wrap: wrap;
+    flex-direction: row-reverse;
+  }
 }
 
 .features-list__title {

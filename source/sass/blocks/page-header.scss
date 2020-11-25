@@ -1,10 +1,10 @@
 .page-header {
   background-color: $background-basic;
-  width: 100%;
-  min-height: 56px;
+  /* width: 100%;
+  min-height: 56px;*/
   position: relative;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column;*/
 }
 
 .page-header__logo {
@@ -16,7 +16,7 @@
   left: 50%;
   transform: translate(-50%, 0);
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     top: 0;
   }
 }
