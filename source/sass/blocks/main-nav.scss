@@ -1,3 +1,10 @@
 .main-nav {
   background-color: $background-highlighted;
+  width: 100%;
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

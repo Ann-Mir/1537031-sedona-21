@@ -5,6 +5,7 @@ $mobile-width-only: 767px;
 
 //Colors
 $color-black: #000000;
+$mine-shaft: #333333;
 $color-black-opacity-medium: rgba(0, 0, 0, 0.3);
 $color-black-opacity-low: rgba(0, 0, 0, 0.6);
 $color-white: #ffffff;
@@ -26,14 +27,15 @@ $basic-font-family: "PT Sans", "Arial", sans-serif;
 
 $basic-font-color: $color-black;
 $extra-font-color: $color-white;
+$plain-text-color: $mine-shaft;
 
 $basic-font-size: 14px;
 $titles-font-size: 18px;
 $titles-big-font-size: 21px;
 $basic-buttons-font-size: 21px;
 
-
 $background-basic: $color-white;
+$background-body: $mercury;
 $background-highlighted: $color-light-blue;
 $background-features: $color-light-grey;
 $background-form-input: $color-white-smoke;
