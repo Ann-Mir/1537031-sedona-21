@@ -1,12 +1,21 @@
 .intro {
-  text-align: center;
   background-color: $background-basic;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .intro__title {
   @include font($titles-font-size, 26px, bold);
   margin-top: 0;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $titles-big-font-size;
+  }
 }
 
 .intro__description {

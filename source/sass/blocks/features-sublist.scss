@@ -17,7 +17,7 @@
 }
 
 .features-sublist__item {
-  @media (max-width: $mobile-with) {
+  @media (max-width: $mobile-width-only) {
     padding: 26px 0 0 51px;
     text-align: center;
   }
