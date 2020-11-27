@@ -1,5 +1,18 @@
 .photos {
   background-color: $background-basic;
   padding: 0 20px 0 20px;
-  margin: 0 auto;
+  margin: 0 auto 32px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 63px;
+  }
 }

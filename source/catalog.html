@@ -7,137 +7,147 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/101.7x84" width="102" height="84" alt="Герб города Седона">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню или закрыть открытое меню</span></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active">Фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="page-main">
-      <section class="promo-inner promo-inner--catalog">
-        <img class="promo-inner__title" src="https://via.placeholder.com/229x39" width="229" height="39" alt="Sedona">
-      </section>
-      <div class="intro">
-        <p class="intro__title">Фото и Видео</p>
-        <p class="intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      </div>
-      <section class="photos">
-        <h2 class="visually-hidden">Фотографии, сделанные нашими гостями</h2>
-        <ul class="photos__list photos-list">
-          <li class="photos-list__item  photos-list__item--highlighted">
-            <article class="photos-list__article photo-article">
-              <a class="photo-article__link" href="#">
-                <img class="photo-article__image" src="https://via.placeholder.com/280x280" alt="Фотографяи дороги и гор на закате">
-              </a>
-              <h3 class="photo-article__description">Неродные просторы</h3>
-              <p class="photo-article__author">Автор фото: Борис</p>
-              <div class="photo-article__likes-container likes-container">
-                <button class="likes-container__button likes-button" type="button" aria-label="Поставить лайк или убрать лайк"></button>
-                <p class="likes-container__counter">1350</p>
-              </div>
-            </article>
-          </li>
-          <li class="photos-list__item">
-            <article class="photos-list__article photo-article">
-              <a class="photo-article__link" href="#">
-                <img class="photo-article__image" src="https://via.placeholder.com/280x280" alt="Фотография кактуса на фоне гор">
-              </a>
-              <h3 class="photo-article__description">Местная растительность</h3>
-              <p class="photo-article__author">Автор фото: Сергей</p>
-              <div class="photo-article__likes-container likes-container">
-                <button class="likes-container__button likes-button" type="button" aria-label="Поставить лайк или убрать лайк"></button>
-                <p class="likes-container__counter">143</p>
-              </div>
-            </article>
-          </li>
-          <li class="photos-list__item">
-            <article class="photos-list__article photo-article">
-              <a class="photo-article__link" href="#">
-                <img class="photo-article__image" src="https://via.placeholder.com/280x280" alt="Фотография леса и дороги">
-              </a>
-              <h3 class="photo-article__description">Дорога на север</h3>
-              <p class="photo-article__author">Автор фото: Петр</p>
-              <div class="photo-article__likes-container likes-container">
-                <button class="likes-container__button likes-button" type="button" aria-label="Поставить лайк или убрать лайк"></button>
-                <p class="likes-container__counter">96</p>
-              </div>
-            </article>
-          </li>
-          <li class="photos-list__item">
-            <article class="photos-list__article photo-article">
-              <a class="photo-article__link" href="#">
-                <img class="photo-article__image" src="https://via.placeholder.com/280x280" alt="Фотография Моста Дьявола">
-              </a>
-              <h3 class="photo-article__description">Мост Дьявола</h3>
-              <p class="photo-article__author">Автор фото: Антон</p>
-              <div class="photo-article__likes-container likes-container">
-                <button class="likes-container__button likes-button" type="button" aria-label="Поставить лайк или убрать лайк"></button>
-                <p class="likes-container__counter">254</p>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </section>
-      <section class="promo-video">
-        <h2 class="visually-hidden">Видео-презентация Седоны</h2>
-        <div class="promo-video__intro intro">
-          <p class="intro__title">Все еще сомневаетесь?</p>
-          <p class="intro__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        </div>
-        <video class="promo-video__movie" width="320" height="201" poster="https://via.placeholder.com/320x201">
-          <source src="https://via.placeholder.com/320x201" type="video/mp4">
-        </video>
-        <div class="promo-video__controls video-controls">
-          <div class="video-controls__scale">
-            <div class="video-controls__bar"></div>
-          </div>
-          <div class="video-controls__toggle" tabindex="0" aria-label="Кнопка прокрутки видео"></div>
-          <button class="video-controls__restart" type="button" aria-label="Посмотреть видео еще раз"></button>
-          <button class="video-controls__subtitles" type="button" aria-label="Включить субтитры"></button>
-          <button class="video-controls__full-screen" type="button" aria-label="Открыть видео на полный экран"></button>
-        </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <p class="page-footer__sedona-hashtag sedona-hashtag">#VISITSEDONA</p>
-      <ul class="page-footer__social-list social-list">
-        <li class="social-list__item">
-          <a class="socila-list__link button socila-list__link--twitter">
-            <span class="visually-hidden">Мы в Твиттере</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="socila-list__link button socila-list__link--facebook">
-            <span class="visually-hidden">Мы в Фейсбуке</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="socila-list__link button socila-list__link--youtube">
-            <span class="visually-hidden">Мы в Youtube</span>
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт разработчика HTML Academy" target="_blank">
-          <img class="copyright__logo" src="https://via.placeholder.com/27x35" width="27" height="35" alt="Логотип HTML Academy">
+    <div class="page__container">
+      <header class="page-header">
+        <a class="page-header__logo" href="index.html">
+          <img src="https://via.placeholder.com/101.7x84" width="102" height="84" alt="Герб города Седона">
         </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню или закрыть открытое меню</span></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="page-main">
+        <section class="promo-inner promo-inner--catalog">
+          <img class="promo-inner__title" src="https://via.placeholder.com/229x39" width="229" height="39" alt="Sedona">
+        </section>
+        <div class="intro intro--photo">
+          <p class="intro__title">Фото и Видео</p>
+          <p class="intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+        <section class="photos">
+          <h2 class="visually-hidden">Фотографии, сделанные нашими гостями</h2>
+          <ul class="photos__list photos-list">
+            <li class="photos-list__item  photos-list__item--highlighted">
+              <article class="photos-list__article photo-article">
+                <a class="photo-article__link" href="#">
+                  <img class="photo-article__image" src="https://via.placeholder.com/280x280" alt="Фотографяи дороги и гор на закате">
+                </a>
+                <div class="photo-article__title-container">
+                  <h3 class="photo-article__description">Неродные просторы</h3>
+                  <p class="photo-article__author">Автор фото: Борис</p>
+                  <div class="photo-article__likes-container likes-container">
+                    <button class="likes-container__button likes-button" type="button" aria-label="Поставить лайк или убрать лайк"></button>
+                    <p class="likes-container__counter">1350</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="photos-list__item">
+              <article class="photos-list__article photo-article">
+                <a class="photo-article__link" href="#">
+                  <img class="photo-article__image" src="https://via.placeholder.com/280x280" alt="Фотография кактуса на фоне гор">
+                </a>
+                <div class="photo-article__title-container">
+                  <h3 class="photo-article__description">Местная растительность</h3>
+                  <p class="photo-article__author">Автор фото: Сергей</p>
+                  <div class="photo-article__likes-container likes-container">
+                    <button class="likes-container__button likes-button" type="button" aria-label="Поставить лайк или убрать лайк"></button>
+                    <p class="likes-container__counter">143</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="photos-list__item">
+              <article class="photos-list__article photo-article">
+                <a class="photo-article__link" href="#">
+                  <img class="photo-article__image" src="https://via.placeholder.com/280x280" alt="Фотография леса и дороги">
+                </a>
+                <div class="photo-article__title-container">
+                  <h3 class="photo-article__description">Дорога на север</h3>
+                  <p class="photo-article__author">Автор фото: Петр</p>
+                  <div class="photo-article__likes-container likes-container">
+                    <button class="likes-container__button likes-button" type="button" aria-label="Поставить лайк или убрать лайк"></button>
+                    <p class="likes-container__counter">96</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="photos-list__item">
+              <article class="photos-list__article photo-article">
+                <a class="photo-article__link" href="#">
+                  <img class="photo-article__image" src="https://via.placeholder.com/280x280" alt="Фотография Моста Дьявола">
+                </a>
+                <div class="photo-article__title-container">
+                  <h3 class="photo-article__description">Мост Дьявола</h3>
+                  <p class="photo-article__author">Автор фото: Антон</p>
+                  <div class="photo-article__likes-container likes-container">
+                    <button class="likes-container__button likes-button" type="button" aria-label="Поставить лайк или убрать лайк"></button>
+                    <p class="likes-container__counter">254</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+        <section class="promo-video">
+          <h2 class="visually-hidden">Видео-презентация Седоны</h2>
+          <div class="promo-video__intro intro">
+            <p class="intro__title">Все еще сомневаетесь?</p>
+            <p class="intro__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+          <video class="promo-video__movie" width="320" height="201" poster="https://via.placeholder.com/320x201">
+            <source src="https://via.placeholder.com/320x201" type="video/mp4">
+          </video>
+          <div class="promo-video__controls video-controls">
+            <div class="video-controls__scale">
+              <div class="video-controls__bar"></div>
+            </div>
+            <div class="video-controls__toggle" tabindex="0" aria-label="Кнопка прокрутки видео"></div>
+            <button class="video-controls__restart" type="button" aria-label="Посмотреть видео еще раз"></button>
+            <button class="video-controls__subtitles" type="button" aria-label="Включить субтитры"></button>
+            <button class="video-controls__full-screen" type="button" aria-label="Открыть видео на полный экран"></button>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <p class="page-footer__sedona-hashtag sedona-hashtag">#VISITSEDONA</p>
+        <ul class="page-footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="socila-list__link button socila-list__link--twitter">
+              <span class="visually-hidden">Мы в Твиттере</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="socila-list__link button socila-list__link--facebook">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="socila-list__link button socila-list__link--youtube">
+              <span class="visually-hidden">Мы в Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт разработчика HTML Academy" target="_blank">
+            <img class="copyright__logo" src="https://via.placeholder.com/27x35" width="27" height="35" alt="Логотип HTML Academy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

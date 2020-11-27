@@ -1,0 +1,15 @@
+.promo-video__intro {
+  margin-bottom: 33px;
+  width: 266px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 445px;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
+}

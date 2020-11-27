@@ -78,7 +78,6 @@
       width: 315px;
     }
   }
-
 }
 
 .fieldset__input::placeholder,
@@ -116,7 +115,6 @@
 .fieldset__paragraph {
   margin-top: 0;
   display: flex;
- /* flex-wrap: wrap;*/
   justify-content: space-between;
 
   &--user-info {
@@ -190,4 +188,3 @@
     padding-top: 18px;
   }
 }
-
