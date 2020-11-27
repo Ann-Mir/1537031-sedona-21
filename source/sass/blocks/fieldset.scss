@@ -1,5 +1,7 @@
 .fieldset {
   background-color: $background-basic;
+  box-sizing: border-box;
+  margin: 0;
 
   &--user-info {
     padding: 20px 0 25px 0;
@@ -7,6 +9,12 @@
 
   &--user-contacts {
     padding: 20px 0 28px 0;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &--trip-rate {
@@ -15,10 +23,21 @@
 
   &--visited-sights {
     padding: 15px 0 21px 0;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
-  &fieldset--review {
-    padding: 20px 0 51px 0;
+  &--review {
+    padding: 20px 0 0 0;
+    margin-bottom: 51px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 58px;
+    }
   }
 }
 
@@ -44,6 +63,22 @@
   @include font($titles-font-size, 26px, bold);
   text-transform: none;
   color: $basic-font-color;
+  margin: 0;
+
+  &--user-info {
+    box-sizing: border-box;
+    flex-grow: 1;
+  }
+
+  &--user-contacts {
+    box-sizing: border-box;
+    width: 100%;
+
+    @media (min-width: $desktop-width) {
+      width: 315px;
+    }
+  }
+
 }
 
 .fieldset__input::placeholder,
@@ -58,3 +93,101 @@
 .fieldset__list {
   @include list-style-none;
 }
+
+.fieldset--user-info .fieldset__legend,
+.fieldset--user-contacts .fieldset__legend,
+.fieldset--trip-rate .fieldset__legend {
+  margin-bottom: 18px;
+}
+
+.fieldset--user-info .fieldset__legend,
+.fieldset--trip-rate .fieldset__legend {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+}
+
+.fieldset--user-contacts .fieldset__legend {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.fieldset__paragraph {
+  margin-top: 0;
+  display: flex;
+ /* flex-wrap: wrap;*/
+  justify-content: space-between;
+
+  &--user-info {
+    margin-bottom: 20px;
+    flex-direction: row;
+  }
+
+  &--user-contacts {
+    margin-bottom: 14px;
+    flex-direction: column;
+    width: 100%;
+
+    @media (min-width: $desktop-width) {
+      width: min-content;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.fieldset__paragraph--user-info .fieldset__label {
+  margin-right: 11px;
+}
+
+.fieldset__paragraph--user-contacts .fieldset__label {
+  margin-bottom: 8px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 17px;
+    margin-bottom: 0;
+  }
+}
+
+.fieldset__paragraph--user-contacts .fieldset__hidden {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.fieldset--visited-sights .fieldset__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.fieldset--visited-sights .fieldset__option {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
+}
+
+.fieldset__textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 18px;
+  }
+}
+

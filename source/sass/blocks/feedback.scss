@@ -1,0 +1,8 @@
+.feedback__intro {
+  padding: 36px 20px 16px 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-height: 250px;
+  }
+}

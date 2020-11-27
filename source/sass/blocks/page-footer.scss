@@ -7,4 +7,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 36px 60px;
+  }
 }
