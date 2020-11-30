@@ -2,10 +2,6 @@
   height: 100%;
 }
 
-* {
-  outline: 1px solid green;
-}
-
 .page__body {
   font-family: $basic-font-family;
   font-size: $basic-font-size;
@@ -22,11 +18,6 @@
   background-color: $background-basic;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
- /* max-width: 320px;*/
-
- /* @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
-  }*/
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
