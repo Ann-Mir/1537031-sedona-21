@@ -1,21 +1,6 @@
 .page-header {
   background-color: $background-basic;
-  max-width: 320px;
   position: relative;
-
-  @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: $desktop-width;
-  }
-
-  /* width: 100%;
-  min-height: 56px;*/
-
-  /* display: flex;
-  flex-direction: column;*/
 }
 
 .page-header__logo {

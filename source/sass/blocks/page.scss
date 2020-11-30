@@ -22,11 +22,11 @@
   background-color: $background-basic;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  max-width: 320px;
+ /* max-width: 320px;*/
 
-  @media (min-width: $tablet-width) {
+ /* @media (min-width: $tablet-width) {
     max-width: $tablet-width;
-  }
+  }*/
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;

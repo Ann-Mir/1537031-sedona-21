@@ -1,6 +1,6 @@
 .site-list {
   @include list-style-none;
-  width: 100%;
+ /* width: 100%;*/
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1069;
+    width: $desktop-width;
   }
 }
 
