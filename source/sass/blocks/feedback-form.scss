@@ -1,7 +1,71 @@
 .feedback-form {
-  padding: 0 20px 48px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  background-color: $background-basic;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .feedback-form__button {
   width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
+}
+
+.feedback-form__fieldset--user-info {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.feedback-form__fieldset--user-contacts,
+.feedback-form__fieldset--visited-sights,
+.feedback-form__fieldset--review {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.feedback-form__fieldset--trip-rate {
+  @media (min-width: $tablet-width) {
+    order: -1;
+    width: 50%;
+  }
+}
+
+.feedback-form__bottom-container {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.feedback-form__bottom-container .fieldset__hidden {
+  color: $mine-shaft;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }

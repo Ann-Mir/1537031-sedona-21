@@ -1,3 +1,26 @@
 .page-header {
-  width: 100%;
+  background-color: $background-basic;
+  position: relative;
 }
+
+.page-header__logo {
+  width: 102px;
+  height: 84px;
+  display: block;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
+}
+
+/*
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    width: 187px;
+    height: 97px;
+  }
+} */

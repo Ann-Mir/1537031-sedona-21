@@ -1,12 +1,21 @@
+//Viewports
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+
 //Colors
 $color-black: #000000;
+$mine-shaft: #333333;
+$color-black-opacity-low: rgba(0, 0, 0, 0.2);
 $color-black-opacity-medium: rgba(0, 0, 0, 0.3);
 $color-black-opacity-low: rgba(0, 0, 0, 0.6);
 $color-white: #ffffff;
 $color-white-opacity-high: rgba(1, 1, 1, 0.2);
 $color-white-opacity-medium: rgba(1, 1, 1, 0.3);
 $color-white-opacity-low: rgba(1, 1, 1, 0.6);
+$mercury: #e7e5e5;
 $color-white-smoke: #f2f2f2;
+$color-gallery: #eaeaea;
 $color-light-blue: #81b3d2;
 $color-bright-blue: #669ec0;
 $color-dark-blue: #5496bd;
@@ -14,20 +23,24 @@ $color-light-grey: #eeeeee;
 $color-dark-grey: #e6e6e6;
 $color-darken-grey: #5c6870;
 $color-dark-charcoal: #333333;
+$color-pine-cone: #766357;
+$color-kabul: #604e43;
 
 //Basic
 $basic-font-family: "PT Sans", "Arial", sans-serif;
 
 $basic-font-color: $color-black;
 $extra-font-color: $color-white;
+$plain-text-color: $mine-shaft;
 
 $basic-font-size: 14px;
 $titles-font-size: 18px;
 $titles-big-font-size: 21px;
+$titles-extra-big: 30px;
 $basic-buttons-font-size: 21px;
 
-
 $background-basic: $color-white;
+$background-body: $mercury;
 $background-highlighted: $color-light-blue;
 $background-features: $color-light-grey;
 $background-form-input: $color-white-smoke;

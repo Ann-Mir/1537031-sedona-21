@@ -1,5 +1,14 @@
 .social-list {
   @include list-style-none;
+  display: flex;
+}
+
+.social-list__item {
+  margin-right: 6px;
+}
+
+.social-list__item:last-child {
+  margin-right: 0;
 }
 
 .socila-list__link {

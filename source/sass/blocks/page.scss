@@ -8,5 +8,20 @@
   text-transform: uppercase;
   color: $basic-font-color;
 
+  background-color: $background-body;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+.page__container {
   background-color: $background-basic;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px $color-black-opacity-low;
+  }
 }

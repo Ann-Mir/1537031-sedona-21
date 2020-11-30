@@ -1,3 +1,4 @@
 .likes-container__counter {
   @include font($basic-font-size, 24px, bold);
+  background-color: $background-basic;
 }

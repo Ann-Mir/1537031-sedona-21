@@ -1,20 +1,41 @@
 .features-sublist {
   @include list-style-none;
   color: $basic-font-color;
-  text-align: left;
   background-color: $background-basic;
-  padding-top: 26px;
-  padding-bottom: 35px;
+  padding: 9px 20px 35px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 59px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 80px;
+  }
+}
+
+.features-sublist__item {
+  @media (max-width: $mobile-width-only) {
+    padding: 26px 0 0 51px;
+    text-align: center;
+  }
 }
 
 .features-sublist__title {
   @include font($titles-font-size, 26px, bold);
   margin-top: 0;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $titles-big-font-size;
+  }
 }
 
 .features-sublist__description {
-  @include font($basic-font-size, 21px, normal);
+  @include plain-text;
+  line-height: 21px;
   margin-top: 0;
   margin-bottom: 0;
 }
