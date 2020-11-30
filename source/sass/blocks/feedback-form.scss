@@ -63,6 +63,8 @@
 }
 
 .feedback-form__bottom-container .fieldset__hidden {
+  color: $mine-shaft;
+
   @media (max-width: $mobile-width-only) {
     display: none;
   }
