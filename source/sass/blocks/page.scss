@@ -20,6 +20,7 @@
   grid-template-rows: min-content 1fr min-content;
   margin: 0 auto;
   width: 100%;
+  max-width: 1200px;
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;

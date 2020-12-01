@@ -6,6 +6,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $background-basic;
+    display: block;
   }
 }
 
@@ -46,4 +47,10 @@
 .main-nav__toggle:active::before {
   background-color: $basic-button-active;
   box-shadow: 0 9px 0 0 $basic-button-active, 0 18px 0 0 $basic-button-active;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
 }

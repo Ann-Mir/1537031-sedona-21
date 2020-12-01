@@ -1,6 +1,7 @@
 .page-header {
   background-color: $background-basic;
   position: relative;
+  min-height: 56px;
 }
 
 .page-header__logo {
@@ -8,6 +9,7 @@
   height: 84px;
   display: block;
   position: absolute;
+  z-index: 2;
   bottom: -28px;
   left: 50%;
   transform: translate(-50%, 0);
@@ -17,10 +19,9 @@
   }
 }
 
-/*
 @media (min-width: $desktop-width) {
   .page-header__logo {
     width: 187px;
     height: 97px;
   }
-} */
+}

@@ -14,28 +14,13 @@
 .features-list__item-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
     flex-direction: row;
   }
 }
-/*
-.features-list__top-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 26px 26px 24px 26px;
-
-  @media (max-width: $tablet-width) {
-    padding: 41px 34px 41px 33px;
-  }
-
-  @media (max-width: $desktop-width) {
-    padding-top: 43px;
-  }
-}*/
 
 .features-list__item:not(.features-list__item--highlighted) {
   display: flex;
@@ -58,6 +43,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     flex-grow: 0;

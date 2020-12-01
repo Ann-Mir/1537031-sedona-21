@@ -1,0 +1,41 @@
+.promo-main {
+  position: relative;
+  width: 100%;
+  height: 389px;
+  padding-top: 90px;
+  padding-bottom: 57px;
+  box-sizing: border-box;
+  background-image: url("../img/promo-back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+    height: 518px;
+    background-image: url("../img/promo-back-tablet.jpg");
+  }
+}
+
+.promo-main__slogan {
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+}
+
+.promo-main::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 57px;
+  background-image: url("../img/intro-triangle.png");
+  background-repeat: no-repeat;
+}
