@@ -87,10 +87,12 @@
   }
 }
 
-.site-list__item:not(:first-child) .site-list__link {
-  border-top: 1px solid rgba($color-white, 0.2);
-}
+@media (max-width: $mobile-width-only) {
+  .site-list__item:not(:first-child) .site-list__link {
+    border-top: 1px solid rgba($color-white, 0.2);
+  }
 
-.site-list__item:not(:last-child) .site-list__link {
-  border-bottom: 1px solid $color-bermuda-grey;
+  .site-list__item:not(:last-child) .site-list__link {
+    border-bottom: 1px solid $color-bermuda-grey;
+  }
 }
