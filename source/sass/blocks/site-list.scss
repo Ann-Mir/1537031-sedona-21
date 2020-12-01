@@ -1,12 +1,12 @@
 .site-list {
   @include list-style-none;
-  /*margin: 0 auto;*/
   background-color: $background-highlighted;
   width: 100%;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    background-color: $background-basic;
     min-width: 723px;
     height: 100%;
     flex-direction: row;
@@ -85,4 +85,12 @@
       color: rgba($color-pine-cone, 0.3);
     }
   }
+}
+
+.site-list__item:not(:first-child) .site-list__link {
+  border-top: 1px solid rgba($color-white, 0.2);
+}
+
+.site-list__item:not(:last-child) .site-list__link {
+  border-bottom: 1px solid $color-bermuda-grey;
 }
