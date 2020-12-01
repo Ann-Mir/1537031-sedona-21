@@ -18,6 +18,8 @@
   background-color: $background-basic;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  margin: 0 auto;
+  width: 100%;
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
