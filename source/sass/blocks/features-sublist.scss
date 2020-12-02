@@ -26,6 +26,10 @@
   }
 }
 
+.features-sublist__item:last-child {
+  margin-bottom: 0;
+}
+
 .features-sublist__title {
   @include font($titles-font-size, 26px, bold);
   margin-top: 0;

@@ -1,16 +1,26 @@
 .page-footer {
   background-color: $background-basic;
   box-sizing: border-box;
-  padding: 36px 20px 26px 20px;
+  padding: 40px 20px 18px 20px;
   min-height: 243px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
     padding: 36px 60px;
   }
+}
+
+.page-footer__sedona-hashtag {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.page-footer__social-list {
+  margin-bottom: 45px;
 }

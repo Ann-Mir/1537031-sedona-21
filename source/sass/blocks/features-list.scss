@@ -27,15 +27,52 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 26px 26px 24px 26px;
+  padding: 26px 33px 26px 33px;
 
-  @media (max-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 41px 34px 41px 33px;
   }
 
-  @media (max-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 43px;
   }
+}
+
+.features-list__item {
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 26px;
+  padding-bottom: 24px;
+
+  &:nth-child(3) {
+    @media (min-width: $tablet-width) {
+      grid-area: f3;
+    }
+  }
+
+  &:nth-child(4) {
+    @media (min-width: $tablet-width) {
+      grid-area: f4;
+    }
+  }
+
+  &:nth-child(5) {
+    @media (min-width: $tablet-width) {
+      grid-area: f5;
+    }
+  }
+}
+
+.features-list__item:not(.features-list__item--highlighted):not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 87.5%;
+  height: 1px;
+  background-color: $color-alto;
 }
 
 .features-list__item--highlighted .features-list__top-container {
@@ -65,10 +102,14 @@
 }
 
 .features-list__img-container {
+  width: 320px;
+  height: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
@@ -77,31 +118,6 @@
 
   @media (min-width: $desktop-width) {
     max-width: 800px;
-  }
-}
-
-.features-list__item {
-  text-align: center;
-  margin-top: 0;
-  padding-top: 26px;
-  padding-bottom: 24px;
-
-  &:nth-child(3) {
-    @media (min-width: $tablet-width) {
-      grid-area: f3;
-    }
-  }
-
-  &:nth-child(4) {
-    @media (min-width: $tablet-width) {
-      grid-area: f4;
-    }
-  }
-
-  &:nth-child(5) {
-    @media (min-width: $tablet-width) {
-      grid-area: f5;
-    }
   }
 }
 
@@ -120,7 +136,7 @@
   color: $extra-font-color;
   background-color: $background-highlighted;
   padding-top: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 0;
 }
 
 .features-list__item--highlighted .features-list__number,
@@ -149,22 +165,27 @@
 }
 
 .features-list__item--house .features-list__img-container {
-  width: 320px;
-  height: 260px;
   background-image: url("../img/features-city-mobile@1x1.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
+}
+
+.features-list__item--rocks .features-list__img-container {
+  background-image: url("../img/rocks-mobile@1x.jpg");
 }
 
 .features-list__item--rocks {
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     grid-area: f2;
-    flew-wrap: wrap;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
   }
+}
+
+.features-list__item--rocks .features-list__top-container {
+  padding-bottom: 37px;
 }
 
 .features-list__title {
