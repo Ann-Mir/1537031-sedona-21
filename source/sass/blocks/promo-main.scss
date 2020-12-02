@@ -1,23 +1,34 @@
 .promo-main {
   position: relative;
   width: 100%;
-  height: 389px;
-  padding-top: 90px;
   padding-bottom: 57px;
   box-sizing: border-box;
-  background-image: url("../img/promo-back-mobile.jpg");
+  min-height: 389px;
+
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 90px;
+    background-image: url("../img/promo-back-mobile.jpg");
+    height: auto;
+  }
+  padding-top: 77px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/promo-back-tablet.jpg");
+    max-height: 518px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/promo-back-desktop.jpg");
+    max-height: 518px;
+  }
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 77px;
-    height: 518px;
-    background-image: url("../img/promo-back-tablet.jpg");
-  }
 }
 
 .promo-main__slogan {
@@ -33,9 +44,11 @@
   z-index: 2;
   overflow: hidden;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   width: 100%;
   height: 57px;
-  background-image: url("../img/intro-triangle.png");
+  background-image: url("../img/promo-mobile-triangle.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
