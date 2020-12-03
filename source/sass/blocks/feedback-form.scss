@@ -3,6 +3,7 @@
   padding-right: 20px;
   box-sizing: border-box;
   background-color: $background-basic;
+  /*width: calc(100% - 40px);*/
 
   @media (min-width: $tablet-width) {
     padding-left: 60px;
@@ -18,7 +19,7 @@
 }
 
 .feedback-form__button {
-  width: 100%;
+  width: 280px;
   display: inline-block;
   vertical-align: middle;
 

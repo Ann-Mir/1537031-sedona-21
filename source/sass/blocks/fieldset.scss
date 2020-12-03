@@ -4,6 +4,8 @@
   box-sizing: border-box;
   border: 0;
   margin: 0;
+  /*width: calc(100% - 40px);*/
+  /*width: 280px;*/
 
   &--user-info {
     padding: 20px 0 25px 0;
@@ -44,13 +46,12 @@
 }
 
 .fieldset__legend {
-  position: relative;
-
   @include font($titles-font-size, 26px, bold);
   padding-top: 22px;
   text-align: center;
 }
 
+/*
 .fieldset::before {
   content: "";
   position: absolute;
@@ -60,7 +61,7 @@
   height: 1px;
   overflow: hidden;
   background-color: $color-mercury;
-}
+}*/
 
 .fieldset__label {
   @include plain-text;
@@ -85,15 +86,20 @@
   margin: 0;
   border: none;
   align-self: flex-start;
+  padding-top: 18px;
+  padding-left: 22px;
+  flex-grow: auto;
+  width: 100%;
 
   &--user-info {
     box-sizing: border-box;
-    flex-grow: 1;
+    /*min-width: 192px;*/
+    /*flex-grow: 1;*/
   }
 
   &--user-contacts {
     box-sizing: border-box;
-    width: 100%;
+   /* width: 100%;*/
 
     @media (min-width: $desktop-width) {
       width: 315px;
@@ -114,7 +120,7 @@
   @include list-style-none;
 }
 
-.fieldset--user-info .fieldset__legend,
+/*.fieldset--user-info .fieldset__legend,*/
 .fieldset--user-contacts .fieldset__legend,
 .fieldset--trip-rate .fieldset__legend {
   margin-bottom: 18px;
@@ -137,16 +143,19 @@
   margin-top: 0;
   display: flex;
   justify-content: space-between;
+ /* width: calc(100% - 40px);*/
+ /* width: 100%;*/
 
   &--user-info {
     margin-bottom: 20px;
+    justify-content: flex-start;
     flex-direction: row;
+    align-items: center;
   }
 
   &--user-contacts {
     margin-bottom: 14px;
     flex-direction: column;
-    width: 100%;
 
     @media (min-width: $desktop-width) {
       width: min-content;
@@ -200,7 +209,7 @@
 }
 
 .fieldset__textarea {
-  width: 100%;
+  /*width: 100%;*/
   box-sizing: border-box;
   padding: 13px 20px;
   margin: 0;
