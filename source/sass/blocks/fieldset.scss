@@ -1,4 +1,5 @@
 .fieldset {
+  position: relative;
   background-color: $background-basic;
   box-sizing: border-box;
   border: 0;
@@ -43,7 +44,22 @@
 }
 
 .fieldset__legend {
+  position: relative;
+
   @include font($titles-font-size, 26px, bold);
+  padding-top: 22px;
+  text-align: center;
+}
+
+.fieldset::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 120%;
+  height: 1px;
+  overflow: hidden;
+  background-color: $color-mercury;
 }
 
 .fieldset__label {
@@ -64,7 +80,11 @@
   @include font($titles-font-size, 26px, bold);
   text-transform: none;
   color: $basic-font-color;
+  background-color: $color-white-smoke;
+  height: 58px;
   margin: 0;
+  border: none;
+  align-self: flex-start;
 
   &--user-info {
     box-sizing: border-box;
