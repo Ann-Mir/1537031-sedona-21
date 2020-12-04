@@ -4,15 +4,13 @@
   box-sizing: border-box;
   border: 0;
   margin: 0;
-  /*width: calc(100% - 40px);*/
-  /*width: 280px;*/
 
   &--user-info {
-    padding: 20px 0 25px 0;
+    padding: 20px 0 24px 0;
   }
 
   &--user-contacts {
-    padding: 20px 0 28px 0;
+    padding: 20px 0 25px 0;
 
     @media (min-width: $desktop-width) {
       display: flex;
@@ -51,17 +49,16 @@
   text-align: center;
 }
 
-/*
 .fieldset::before {
   content: "";
   position: absolute;
   top: 0;
   left: -20px;
-  width: 120%;
+  width: 114%;
   height: 1px;
   overflow: hidden;
   background-color: $color-mercury;
-}*/
+}
 
 .fieldset__label {
   @include plain-text;
@@ -77,6 +74,7 @@
 
 .fieldset__input {
   font-family: $basic-font-family;
+  box-sizing: border-box;
 
   @include font($titles-font-size, 26px, bold);
   text-transform: none;
@@ -86,20 +84,17 @@
   margin: 0;
   border: none;
   align-self: flex-start;
-  padding-top: 18px;
-  padding-left: 22px;
+  padding-top: 4px;
+  padding-left: 24px;
   flex-grow: auto;
   width: 100%;
 
   &--user-info {
     box-sizing: border-box;
-    /*min-width: 192px;*/
-    /*flex-grow: 1;*/
   }
 
   &--user-contacts {
     box-sizing: border-box;
-   /* width: 100%;*/
 
     @media (min-width: $desktop-width) {
       width: 315px;
@@ -120,8 +115,18 @@
   @include list-style-none;
 }
 
-/*.fieldset--user-info .fieldset__legend,*/
-.fieldset--user-contacts .fieldset__legend,
+.fieldset--user-info .fieldset__legend {
+  margin-bottom: 0;
+}
+
+.fieldset--user-contacts .fieldset__legend {
+  margin-bottom: -5px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
 .fieldset--trip-rate .fieldset__legend {
   margin-bottom: 18px;
 }
@@ -133,18 +138,10 @@
   }
 }
 
-.fieldset--user-contacts .fieldset__legend {
-  @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
-  }
-}
-
 .fieldset__paragraph {
   margin-top: 0;
   display: flex;
   justify-content: space-between;
- /* width: calc(100% - 40px);*/
- /* width: 100%;*/
 
   &--user-info {
     margin-bottom: 20px;
@@ -156,6 +153,47 @@
   &--user-contacts {
     margin-bottom: 14px;
     flex-direction: column;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 34px;
+      right: 0;
+      background-color: $color-dark-grey;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (min-width: $desktop-width) {
+        top: 0;
+      }
+    }
+
+    &--phone {
+      &::after {
+        width: 18px;
+        height: 18px;
+        padding: 20px 19px 20px 21px;
+        background-image: url("../img/phone-icon.svg");
+
+        @media (min-width: $desktop-width) {
+          right: 79px;
+        }
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-right: 79px;
+      }
+    }
+
+    &--mail {
+      &::after {
+        width: 16px;
+        height: 12px;
+        padding: 23px 21px;
+        background-image: url("../img/mail-icon.svg");
+      }
+    }
 
     @media (min-width: $desktop-width) {
       width: min-content;
@@ -165,11 +203,16 @@
   }
 }
 
+.fieldset__paragraph:last-child {
+  margin-bottom: 0;
+}
+
 .fieldset__paragraph--user-info .fieldset__label {
-  margin-right: 11px;
+  margin-right: 12px;
 }
 
 .fieldset__paragraph--user-contacts .fieldset__label {
+  margin-left: 22px;
   margin-bottom: 8px;
 
   @media (min-width: $desktop-width) {
@@ -182,6 +225,10 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.fieldset--visited-sights .fieldset__legend {
+  padding-top: 17px;
 }
 
 .fieldset--visited-sights .fieldset__list {
@@ -217,4 +264,43 @@
   @media (min-width: $tablet-width) {
     padding-top: 18px;
   }
+}
+
+.fieldset__label--trip-rate {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -21px;
+    left: -78px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: $color-white-smoke;
+  }
+}
+
+.fieldset__list--trip-rate .fieldset__option {
+  padding-left: 78px;
+  margin-bottom: 28px;
+}
+
+.fieldset__list--trip-rate .fieldset__option:not(:first-child) {
+  padding-top: 15px;
+}
+
+.fieldset__list--trip-rate .fieldset__option:last-child {
+  margin-bottom: 12px;
+}
+
+.fieldset__input--radio:checked + .fieldset__label--trip-rate::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -61px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: $mine-shaft;
 }

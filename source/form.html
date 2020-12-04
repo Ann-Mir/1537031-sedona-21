@@ -58,28 +58,28 @@
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--user-contacts fieldset fieldset--user-contacts">
               <legend class="fieldset__legend">Контактная информация:</legend>
-              <p class="fieldset__paragraph fieldset__paragraph--user-contacts">
+              <p class="fieldset__paragraph fieldset__paragraph--user-contacts fieldset__paragraph--user-contacts--phone">
                 <label class="fieldset__label" for="user_phone"><span class="fieldset__hidden">Контактный&nbsp;</span>телефон&#42;:</label>
-                <input class="fieldset__input fieldset__input--user-contacts" type="tel" name="user-phone" id="user_phone" placeholder="Введите телефон">
+                <input class="fieldset__input fieldset__input--phone" type="tel" name="user-phone" id="user_phone" placeholder="Введите телефон">
               </p>
-              <p class="fieldset__paragraph fieldset__paragraph--user-contacts">
+              <p class="fieldset__paragraph fieldset__paragraph--user-contacts fieldset__paragraph--user-contacts--mail">
                 <label class="fieldset__label" for="user_email">Электронная&nbsp;почта&#42;:</label>
-                <input class="fieldset__input fieldset__input--user-contacts" type="email" name="user-email" id="user_email" placeholder="Введите e-mail">
+                <input class="fieldset__input fieldset__input--mail" type="email" name="user-email" id="user_email" placeholder="Введите e-mail">
               </p>
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--trip-rate fieldset fieldset--trip-rate">
               <legend class="fieldset__legend">Ваше общее впечатление:</legend>
               <ul class="fieldset__list fieldset__list--trip-rate">
                 <li class="fieldset__option">
-                  <input class="fieldset__input visually-hidden" type="radio" name="rate" id="good" value="good" checked>
+                  <input class="fieldset__input fieldset__input--radio visually-hidden" type="radio" name="rate" id="good" value="good" checked>
                   <label class="fieldset__label fieldset__label--trip-rate" for="good">Скорее положительное</label>
                 </li>
                 <li class="fieldset__option">
-                  <input class="fieldset__input visually-hidden" type="radio" name="rate" id="negative" value="negative">
+                  <input class="fieldset__input fieldset__input--radio visually-hidden" type="radio" name="rate" id="negative" value="negative">
                   <label class="fieldset__label fieldset__label--trip-rate" for="negative">Скорее отрицательное</label>
                 </li>
                 <li class="fieldset__option">
-                  <input class="fieldset__input visually-hidden" type="radio" name="rate" id="not_sure" value="not-sure">
+                  <input class="fieldset__input fieldset__input--radio visually-hidden" type="radio" name="rate" id="not_sure" value="not-sure">
                   <label class="fieldset__label fieldset__label--trip-rate" for="not_sure">Затрудняюсь ответить</label>
                 </li>
               </ul>
@@ -88,15 +88,15 @@
               <legend class="fieldset__legend">Посещенные достопримечательности:</legend>
               <ul class="fieldset__list">
                 <li class="fieldset__option">
-                  <input class="fieldset__input visually-hidden" type="checkbox" name="devil-bridge" id="devil_bridge" value="devil-bridge" checked>
+                  <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="devil-bridge" id="devil_bridge" value="devil-bridge" checked>
                   <label class="fieldset__label fieldset__label--visited-sights" for="devil_bridge">Мост Дьявола</label>
                 </li>
                 <li class="fieldset__option">
-                  <input class="fieldset__input visually-hidden" type="checkbox" name="bell-rock" id="bell_rock" value="bell-rock" checked>
+                  <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="bell-rock" id="bell_rock" value="bell-rock" checked>
                   <label class="fieldset__label fieldset__label--visited-sights" for="bell_rock">Гора-Колокол</label>
                 </li>
                 <li class="fieldset__option">
-                  <input class="fieldset__input visually-hidden" type="checkbox" name="slide-park" id="slide_park" value="slide-park" checked>
+                  <input class="fieldset__input fieldset__input--checkbox visually-hidden" type="checkbox" name="slide-park" id="slide_park" value="slide-park" checked>
                   <label class="fieldset__label fieldset__label--visited-sights" for="slide_park">Слайд-Парк</label>
                 </li>
                 <li class="fieldset__option">
