@@ -28,7 +28,7 @@
 .intro--photo {
   width: 290px;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
@@ -40,3 +40,12 @@
     margin-bottom: 67px;
   }
 }
+
+.intro--photo .intro__title {
+  margin-bottom: 29px;
+}
+
+.intro--photo .intro__description {
+  line-height: 24px;
+}
+

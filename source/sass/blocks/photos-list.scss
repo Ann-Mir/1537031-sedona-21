@@ -15,6 +15,25 @@
   }
 }
 
+.photos-list__item {
+  position: relative;
+  padding: 22px 20px 15px 20px;
+  border-top: 1px solid $color-mercury;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  margin: 0;
+ /* &::before {
+    content: "";
+    position: relative;
+    top:
+    left: 0;
+  }*/
+}
+
+.photos-list__item:last-child {
+  border-bottom: 1px solid $color-mercury;
+}
+
 .photos-list__item:nth-child(2n + 1) .photo-article__title-container {
   @media (min-width: $tablet-width) {
     background-color: $color-gallery;
