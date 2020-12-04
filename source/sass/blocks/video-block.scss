@@ -1,0 +1,14 @@
+.video-block {
+  position: relative;
+  padding-bottom: 66px;
+}
+
+.video-block__movie {
+  display: block;
+}
+
+.video-block__controls {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
