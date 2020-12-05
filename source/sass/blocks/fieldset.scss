@@ -107,7 +107,7 @@
   @include font($titles-font-size, 26px, bold);
   text-transform: none;
   color: $basic-font-color;
-  background-color: $color-white-smoke;
+  background-color: $background-form-input;
   height: 58px;
   margin: 0;
   border: none;
@@ -127,6 +127,34 @@
     @media (min-width: $desktop-width) {
       width: 315px;
     }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-mercury;
+    border: none;
+  }
+
+  &:focus-within {
+    background-color: $background-basic;
+    outline: none;
+    border: 4px solid $color-mercury;
+  }
+
+  &--radio:hover + .fieldset__label--trip-rate::before,
+  &--radio:focus + .fieldset__label--trip-rate::before,
+  &--checkbox:hover + .fieldset__label--visited-sights::before,
+  &--checkbox:focus + .fieldset__label--visited-sights::before {
+    background-color: $color-mercury;
+  }
+
+  &--radio:active + .fieldset__label--trip-rate::before,
+  &--checkbox:active + .fieldset__label--visited-sights::before {
+    background-color: $color-alto;
+  }
+
+  &--radio:checked:active + .fieldset__label--trip-rate::after {
+    background-color: rgba($mine-shaft, 0.3);
   }
 }
 

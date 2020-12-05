@@ -12,9 +12,19 @@
 }
 
 .socila-list__link {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 46px;
   height: 48px;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-button-hover;
+  }
+
+  &:active {
+    background-color: $basic-button-active;
+  }
 }
