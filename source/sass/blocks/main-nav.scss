@@ -8,6 +8,8 @@
   @media (min-width: $tablet-width) {
     background-color: $background-basic;
     display: block;
+   /* min-height: 56px;*/
+    height: 100%;
   }
 }
 
@@ -48,8 +50,8 @@
   }
 
   &:active::before {
-    background-color: rgba($basic-button-color 0.3);
-    box-shadow: 0 9px 0 0 rgba($basic-button-color 0.3), 0 18px 0 0 rgba($basic-button-color 0.3);
+    background-color: rgba($basic-button-color, 0.3);
+    box-shadow: 0 9px 0 0 rgba($basic-button-color, 0.3), 0 18px 0 0 rgba($basic-button-color, 0.3);
   }
 }
 
