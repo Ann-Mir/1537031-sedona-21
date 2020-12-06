@@ -7,7 +7,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 59px 155px 58px 155px;
+    padding: 59px 155px 40px 155px;
   }
 }
 
@@ -20,6 +20,7 @@
   @media (min-width: $tablet-width) {
     min-height: 220px;
     justify-content: flex-start;
+    width: 458px;
   }
 }
 

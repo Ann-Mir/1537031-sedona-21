@@ -9,6 +9,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    min-height: 120px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
@@ -19,9 +20,25 @@
 .page-footer__sedona-hashtag {
   margin-top: 0;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__social-list {
   margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-left: -8px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__copyright {
+    margin-top: 9px;
+  }
 }
 
