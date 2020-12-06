@@ -8,6 +8,7 @@
       "f1 f1 f1"
       "f2 f2 f2"
       "f3 f4 f5";
+    /*column-width: 1fr;*/
   }
 }
 
@@ -22,7 +23,14 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .features-list__title .feautures-list__new-line {
+    display: none;
+  }
+}
+
 .features-list__item:not(.features-list__item--highlighted) {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -30,11 +38,7 @@
   padding: 26px 33px 26px 33px;
 
   @media (min-width: $tablet-width) {
-    padding: 41px 34px 41px 33px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 43px;
+    padding: 43px 34px 41px 30px;
   }
 }
 
@@ -65,14 +69,16 @@
   }
 }
 
-.features-list__item:not(.features-list__item--highlighted):not(:last-child)::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  width: 87.5%;
-  height: 1px;
-  background-color: $color-alto;
+@media (max-width: $mobile-width-only) {
+  .features-list__item:not(.features-list__item--highlighted):not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 87.5%;
+    height: 1px;
+    background-color: $color-alto;
+  }
 }
 
 .features-list__item--highlighted .features-list__top-container {
@@ -85,7 +91,7 @@
   @media (min-width: $tablet-width) {
     flex-grow: 0;
     max-width: 256px;
-    padding: 40px 32px 43px 32px;
+    padding: 37px 30px 43px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,10 +110,10 @@
 .features-list__img-container {
   width: 320px;
   height: 260px;
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  max-width: 100%;*/
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -123,6 +129,16 @@
 
 .features-list__description {
   margin-bottom: 0;
+}
+
+.features-list__description .feautures-list__new-line {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .features-list__number,
@@ -189,7 +205,21 @@
 }
 
 .features-list__item--rocks .features-list__img-container {
+  width: 320px;
+  height: 260px;
   background-image: url("../img/rocks-mobile@1x.jpg");
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+    height: 256px;
+    background-image: url("../img/rocks-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    height: 256px;
+    background-image: url("../img/rocks-desktop@1x.jpg");
+  }
 }
 
 .features-list__item--rocks {
@@ -198,6 +228,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     grid-area: f2;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -214,9 +245,14 @@
 
   @media (min-width: $tablet-width) {
     font-size: $titles-big-font-size;
+    margin-bottom: 12px;
   }
 }
 
 .features-list__number {
   margin: 0 0 16px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 }

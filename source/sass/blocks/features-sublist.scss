@@ -5,10 +5,10 @@
   padding: 26px 20px 35px 21px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
-    padding-bottom: 59px;
+    padding: 60px 0 44px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "accomodation food souveniers";
   }
 
   @media (min-width: $desktop-width) {
@@ -16,13 +16,43 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .features-sublist__item--accomodation {
+    grid-area: accomodation;
+  }
+
+  .features-sublist__item--souvenirs {
+    grid-area: souveniers;
+  }
+
+  .features-sublist__item--food {
+    grid-area: food;
+  }
+}
+
 .features-sublist__item {
   position: relative;
   margin-bottom: 17px;
+  padding-top: 100px;
+  padding-left: 33px;
+  padding-right: 31px;
 
   @media (max-width: $mobile-width-only) {
     padding: 10px 0 0 49px;
     text-align: left;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .features-sublist__description--new-line {
+    display: none;
   }
 }
 
@@ -37,6 +67,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: $titles-big-font-size;
+    margin-bottom: 20px;
   }
 }
 
@@ -56,6 +87,14 @@
   height: 37px;
   background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 72px;
+    background-size: cover;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }
 
 .features-sublist__item--souvenirs::before {
@@ -67,6 +106,14 @@
   height: 38px;
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 64px;
+    height: 75px;
+    background-size: cover;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }
 
 .features-sublist__item--food::before {
@@ -79,4 +126,12 @@
   height: 35px;
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 76px;
+    height: 68px;
+    background-size: cover;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }
