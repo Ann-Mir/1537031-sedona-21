@@ -10,4 +10,8 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 195px;
+  }
 }

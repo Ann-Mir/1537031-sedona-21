@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     padding: 59px 155px 40px 155px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 53px;
+  }
 }
 
 .booking__container {
@@ -44,6 +48,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 38px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -51,7 +59,6 @@
     display: none;
   }
 }
-
 
 .booking__link {
   width: 100%;

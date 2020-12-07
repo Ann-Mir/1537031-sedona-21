@@ -15,6 +15,11 @@
     justify-content: space-between;
     padding: 36px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
 }
 
 .page-footer__sedona-hashtag {
@@ -41,4 +46,3 @@
     margin-top: 9px;
   }
 }
-
