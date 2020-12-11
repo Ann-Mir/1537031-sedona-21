@@ -24,6 +24,13 @@
     background-image: url("../img/promo-back-inner-tablet@1x.jpg");
     resize: both;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 101px;
+    margin-bottom: 62px;
+    height: 301px;
+    background-image: url("../img/promo-back-inner-desktop@1x.jpg");
+  }
 }
 
 @media (max-width: $mobile-width-only) {

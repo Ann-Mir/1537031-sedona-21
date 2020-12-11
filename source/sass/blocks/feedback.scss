@@ -1,9 +1,11 @@
 .feedback {
+  box-sizing: border-box;
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 62px;
   }
+
 }
 
 .feedback__intro {
@@ -13,6 +15,15 @@
   @media (min-width: $tablet-width) {
     min-height: 250px;
     padding: 0 167px 17px 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 210px;
+    padding-right: 384px;
+    padding-bottom: 0;
+    padding-left: 382px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

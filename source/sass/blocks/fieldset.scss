@@ -15,6 +15,10 @@
       flex-direction: column;
       align-items: flex-start;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 80px;
+    }
   }
 
   &--user-contacts {
@@ -214,6 +218,10 @@
     margin-bottom: 35px;
     margin-left: -53px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -120px;
+  }
 }
 
 .fieldset--user-contacts .fieldset__legend {
@@ -233,6 +241,11 @@
       background-color: $color-alto;
       width: 123px;
       height: 1px;
+
+      @media (min-width: $desktop-width) {
+        left: -340px;
+        width: 280px;
+      }
     }
 
     &::after {
@@ -245,11 +258,16 @@
       background-color: $color-alto;
       width: 123px;
       height: 1px;
+
+      @media (min-width: $desktop-width) {
+        right: -340px;
+        width: 280px;
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 50px;
   }
 }
 
@@ -279,6 +297,11 @@
       width: 123px;
       height: 1px;
       margin-top: 7px;
+
+      @media (min-width: $desktop-width) {
+        left: -340px;
+        width: 280px;
+      }
     }
 
     &::after {
@@ -292,6 +315,11 @@
       width: 123px;
       height: 1px;
       margin-top: 7px;
+
+      @media (min-width: $desktop-width) {
+        right: -340px;
+        width: 280px;
+      }
     }
   }
 }
@@ -306,11 +334,16 @@
       position: absolute;
       overflow: hidden;
       top: 50%;
-      left: -200px;
+      left: -250px;
       transform: translateY(-50%);
       background-color: $color-alto;
       width: 123px;
       height: 1px;
+
+      @media (min-width: $desktop-width) {
+        left: -355px;
+        width: 275px;
+      }
     }
 
     &::after {
@@ -318,11 +351,16 @@
       position: absolute;
       overflow: hidden;
       top: 50%;
-      right: -200px;
+      right: -250px;
       transform: translateY(-50%);
       background-color: $color-alto;
       width: 123px;
       height: 1px;
+
+      @media (min-width: $desktop-width) {
+        right: -355px;
+        width: 275px;
+      }
     }
   }
 }
@@ -348,6 +386,11 @@
     flex-direction: column;
     position: relative;
 
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -368,6 +411,10 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
     }
 
     &--phone {
@@ -421,9 +468,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    align-self: center;
     margin-right: 17px;
     margin-bottom: 0;
+    margin-left: 0;
   }
+}
+
+.fieldset__paragraph--user-contacts .fieldset__input {
+  width: 315px;
 }
 
 .fieldset__paragraph--user-contacts .fieldset__hidden {
@@ -448,6 +501,8 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -462,7 +517,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    width: min-content;
   }
 }
 
