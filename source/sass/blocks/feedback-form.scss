@@ -66,6 +66,8 @@
 
 .feedback-form__bottom-container .fieldset__hidden {
   color: $mine-shaft;
+  margin-top: 24px;
+  margin-bottom: 0;
 
   @media (max-width: $mobile-width-only) {
     display: none;

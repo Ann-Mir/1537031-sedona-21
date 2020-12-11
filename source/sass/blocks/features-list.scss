@@ -1,6 +1,5 @@
 .features-list {
   @include list-style-none;
-  background-color: $background-features;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -50,11 +49,16 @@
 
 .features-list__item:not(.features-list__item--highlighted) {
   box-sizing: border-box;
+  background-color: $background-features;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding: 26px 33px 26px 33px;
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 320px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 43px 34px 41px 30px;
@@ -111,6 +115,10 @@
   justify-content: flex-start;
   align-items: center;
 
+  @media (max-width: $mobile-width-only) {
+    max-width: 320px;
+  }
+
   @media (min-width: $tablet-width) {
     flex-grow: 0;
     width: 256px;
@@ -164,6 +172,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media (max-width: $mobile-width-only) {
+    max-width: 320px;
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 512px;
     height: 256px;
@@ -199,6 +211,7 @@
     height: 37px;
     background-image: url("../img/features-triangle.svg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

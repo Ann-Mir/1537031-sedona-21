@@ -1,5 +1,9 @@
 .feedback {
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
 }
 
 .feedback__intro {
@@ -8,11 +12,17 @@
 
   @media (min-width: $tablet-width) {
     min-height: 250px;
+    padding: 0 167px 17px 166px;
   }
 }
 
 .feedback__intro .intro__title {
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $titles-extra-big;
+    margin-bottom: 30px;
+  }
 }
 
 .feedback__intro .intro__description {

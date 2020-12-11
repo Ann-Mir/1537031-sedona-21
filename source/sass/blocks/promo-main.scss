@@ -44,7 +44,7 @@
   position: absolute;
   z-index: 2;
   overflow: hidden;
-  bottom: 0;
+  bottom: -1px;
   left: 50%;
   transform: translate(-50%, 0);
   width: 100%;

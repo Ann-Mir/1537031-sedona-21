@@ -7,10 +7,22 @@
 
   &--user-info {
     padding: 20px 0 24px 0;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 58px;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &--user-contacts {
     padding: 20px 0 25px 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 10px;
+    }
 
     @media (min-width: $desktop-width) {
       display: flex;
@@ -21,6 +33,21 @@
 
   &--trip-rate {
     padding: 20px 0 27px 0;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      margin-bottom: 40px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 100%;
+        background-color: $color-alto;
+        width: 1px;
+        height: 292px;
+      }
+    }
   }
 
   &--visited-sights {
@@ -30,6 +57,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding-bottom: 31px;
     }
   }
 
@@ -38,7 +66,7 @@
     margin-bottom: 45px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 58px;
+      margin-bottom: 53px;
     }
   }
 }
@@ -47,17 +75,25 @@
   @include font($titles-font-size, 26px, bold);
   padding-top: 22px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding: 7px 0 0 0;
+    margin-bottom: 22px;
+  }
 }
 
-.fieldset::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -20px;
-  width: 114%;
-  height: 1px;
-  overflow: hidden;
-  background-color: $color-mercury;
+@media (max-width: $mobile-width-only) {
+  .fieldset::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 114%;
+    height: 1px;
+    overflow: hidden;
+    background-color: $color-mercury;
+  }
 }
 
 .fieldset__label {
@@ -173,10 +209,44 @@
 
 .fieldset--user-info .fieldset__legend {
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+    margin-left: -53px;
+  }
 }
 
 .fieldset--user-contacts .fieldset__legend {
   margin-bottom: -5px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: -185px;
+      transform: translateY(-50%);
+      background-color: $color-alto;
+      width: 123px;
+      height: 1px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      right: -185px;
+      transform: translateY(-50%);
+      background-color: $color-alto;
+      width: 123px;
+      height: 1px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 71px;
@@ -185,12 +255,75 @@
 
 .fieldset--trip-rate .fieldset__legend {
   margin-bottom: 18px;
-}
 
-.fieldset--user-info .fieldset__legend,
-.fieldset--trip-rate .fieldset__legend {
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
+    margin-left: -25px;
+  }
+}
+
+.fieldset--visited-sights .fieldset__legend {
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: -185px;
+      transform: translateY(-50%);
+      background-color: $color-alto;
+      width: 123px;
+      height: 1px;
+      margin-top: 7px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      right: -185px;
+      transform: translateY(-50%);
+      background-color: $color-alto;
+      width: 123px;
+      height: 1px;
+      margin-top: 7px;
+    }
+  }
+}
+
+.fieldset--review .fieldset__legend {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 39px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: -200px;
+      transform: translateY(-50%);
+      background-color: $color-alto;
+      width: 123px;
+      height: 1px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      right: -200px;
+      transform: translateY(-50%);
+      background-color: $color-alto;
+      width: 123px;
+      height: 1px;
+    }
   }
 }
 
@@ -204,6 +337,10 @@
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
   }
 
   &--user-contacts {
@@ -220,9 +357,17 @@
       background-repeat: no-repeat;
       background-position: center;
 
+      @media (min-width: $tablet-width) {
+        top: 33px;
+      }
+
       @media (min-width: $desktop-width) {
         top: 0;
       }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
     }
 
     &--phone {
@@ -271,6 +416,10 @@
   margin-left: 22px;
   margin-bottom: 8px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 7px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 17px;
     margin-bottom: 0;
@@ -283,18 +432,18 @@
   }
 }
 
-.fieldset--visited-sights .fieldset__legend {
-  padding-top: 17px;
-}
-
 .fieldset--visited-sights .fieldset__list {
   padding-top: 6px;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    padding-right: 70px;
+    padding-left: 97px;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -308,7 +457,8 @@
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 30%;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -339,6 +489,11 @@
 .fieldset__list--trip-rate .fieldset__option {
   padding-left: 78px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 75px;
+    margin-bottom: 36px;
+  }
 }
 
 .fieldset__list--trip-rate .fieldset__option:not(:first-child) {
@@ -369,4 +524,10 @@
   height: 16px;
   background-image: url("../img/tick-icon.svg");
   background-repeat: no-repeat;
+}
+
+@media (max-width: $mobile-width-only) {
+  .fieldset__new-line {
+    display: none;
+  }
 }
