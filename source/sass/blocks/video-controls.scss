@@ -2,6 +2,11 @@
   width: 87.5%;
   height: 111px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 93px;
+  }
 }
 
 .video-controls__range-controls {

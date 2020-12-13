@@ -24,18 +24,29 @@
 .photo-article__image {
   width: 280px;
   height: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 267px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    height: 267px;
+  }
 }
 
-.photo-article__title-container {
+.photo-article__about {
   @media (min-width: $tablet-width) {
     background-color: $color-white-smoke;
-    padding: 22px 18px 15px 20px;
+    width: 100%;
+    height: 80px;
+    padding: 17px 18px 10px 18px;
     box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,7 +55,22 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 80px;
+    padding-left: 21px;
+  }
+}
+
+.photo-article__title-container {
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $extra-font-color;
   }
 }
 
@@ -59,10 +85,22 @@
   text-transform: none;
   margin-top: 0;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $extra-font-color;
+  }
 }
 
 .photo-article__likes-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+
+  @media (min-width: $desktop-width) {
+    color: $extra-font-color;
+  }
 }

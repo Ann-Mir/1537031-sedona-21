@@ -2,21 +2,14 @@
   position: relative;
   width: 100%;
   min-height: 158px;
-  /*height: auto;*/
   box-sizing: border-box;
   background: url("../img/promo-inner-back-mobile@1x.jpg") no-repeat 50% 100%;
-  /*background-repeat: no-repeat;*/
   background-size: cover;
-  /*object-fit: cover;*/
   padding-top: 52px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
-  &--catalog {
-    margin-bottom: 32px;
-  }
 
   @media (min-width: $tablet-width) {
     height: 290px;
@@ -29,7 +22,19 @@
     padding-top: 101px;
     margin-bottom: 62px;
     height: 301px;
-    background-image: url("../img/promo-back-inner-desktop@1x.jpg");
+    background-image: url("../img/promo-inner-desktop@1x.jpg");
+  }
+
+  &--catalog {
+    margin-bottom: 32px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 103px;
+    }
   }
 }
 

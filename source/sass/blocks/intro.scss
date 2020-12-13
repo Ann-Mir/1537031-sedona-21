@@ -37,14 +37,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 67px;
+    margin-bottom: 78px;
   }
 }
 
 .intro--photo .intro__title {
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $titles-extra-big;
+    margin-bottom: 32px;
+  }
 }
 
 .intro--photo .intro__description {
   line-height: 24px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .into__new-line--photo {
+    display: none;
+  }
 }

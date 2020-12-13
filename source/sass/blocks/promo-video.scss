@@ -1,5 +1,10 @@
 .promo-video {
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }
 
 .promo-video__intro {
@@ -14,14 +19,29 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 66px;
+    margin-bottom: 77px;
   }
 }
 
 .promo-video__intro .intro__title {
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $titles-extra-big;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .promo-video__intro .intro__description {
   line-height: 24px;
+}
+
+.promo-video__container {
+  max-width: 800px;
+  max-height: 683px;
+  margin-right: auto;
+  margin-left: auto;
 }
