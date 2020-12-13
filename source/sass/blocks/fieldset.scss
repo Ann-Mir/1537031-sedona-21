@@ -475,8 +475,10 @@
   }
 }
 
-.fieldset__paragraph--user-contacts .fieldset__input {
-  width: 315px;
+@media (max-width: $mobile-width-only) {
+  .fieldset__paragraph--user-contacts .fieldset__input {
+    width: 280px;
+  }
 }
 
 .fieldset__paragraph--user-contacts .fieldset__hidden {
