@@ -12,6 +12,10 @@
   min-width: 320px;
   min-height: 100%;
   margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    background-color: $background-basic;
+  }
 }
 
 .page__container {
@@ -20,7 +24,6 @@
   grid-template-rows: min-content 1fr min-content;
   margin: 0 auto;
   width: 100%;
-  /*max-width: 1200px;*/
 
   @media (max-width: $mobile-width-only) {
     max-width: 320px;

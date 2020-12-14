@@ -387,7 +387,7 @@
     position: relative;
 
     @media (min-width: $tablet-width) {
-      flex-direction: row;
+      flex-direction: column;
       justify-content: flex-start;
     }
 
@@ -475,9 +475,18 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .fieldset__paragraph--user-contacts .fieldset__input {
+
+.fieldset__paragraph--user-contacts .fieldset__input {
+  @media (max-width: $mobile-width-only) {
     width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 315px;
   }
 }
 
