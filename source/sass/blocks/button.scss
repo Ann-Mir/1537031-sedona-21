@@ -21,4 +21,11 @@
   &:active {
     background-color: $basic-button-active;
   }
+
+  &--disabled,
+  &:disabled {
+    background-color: $basic-button-disabled;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
 }

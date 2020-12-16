@@ -12,12 +12,26 @@
   min-width: 320px;
   min-height: 100%;
   margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    background-color: $background-basic;
+  }
 }
 
 .page__container {
   background-color: $background-basic;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 320px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;

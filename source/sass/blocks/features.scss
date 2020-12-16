@@ -1,9 +1,17 @@
 .features__intro {
-  padding: 32px 18px 11px 17px;
+  padding: 34px 25px 11px 25px;
   box-sizing: border-box;
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    width: 520px;
     min-height: 206px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 194px;
   }
 }

@@ -1,13 +1,100 @@
 .main-nav {
-  background-color: $background-highlighted;
+  position: relative;
+  background-color: $background-basic;
+  width: 100%;
+  display: grid;
+  grid-template-rows: min-content 56px;
 
   @media (min-width: $tablet-width) {
     background-color: $background-basic;
+    display: block;
+    height: 100%;
   }
 }
 
 .main-nav__toggle {
+  position: absolute;
+  right: 20px;
+  bottom: 17px;
+  order: 2;
+  z-index: 2;
+  display: block;
+  width: 23px;
+  height: 22px;
+  background-color: $background-basic;
+  cursor: pointer;
+  border: none;
+
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 4px;
+    background-color: $basic-button-color;
+    box-shadow: 0 9px 0 0 $basic-button-color, 0 18px 0 0 $basic-button-color;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: rgba($basic-button-color, 0.6);
+    box-shadow: 0 9px 0 0 rgba($basic-button-color, 0.6), 0 18px 0 0 rgba($basic-button-color, 0.6);
+  }
+
+  &:active::before {
+    background-color: rgba($basic-button-color, 0.3);
+    box-shadow: 0 9px 0 0 rgba($basic-button-color, 0.3), 0 18px 0 0 rgba($basic-button-color, 0.3);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 17px;
+  right: 16px;
+  order: 0;
+  background-color: $color-light-blue;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -2px;
+    width: 28px;
+    height: 3px;
+    background-color: $color-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: rgba($color-white, 0.6);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba($color-white, 0.5);
   }
 }

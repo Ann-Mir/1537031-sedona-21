@@ -1,0 +1,94 @@
+.video-controls {
+  width: 87.5%;
+  height: 111px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 93px;
+  }
+}
+
+.video-controls__range-controls {
+  position: relative;
+  height: 45px;
+  padding-top: 21px;
+  padding-right: 23px;
+  padding-left: 22px;
+  box-sizing: border-box;
+  background-color: rgba($color-black, 0.6);
+}
+
+.video-controls__scale {
+  height: 3px;
+  background-color: rgba($color-white, 0.2);
+}
+
+.video-controls__bar {
+  width: 20%;
+  height: 3px;
+  background-color: rgba($color-white, 0.4);
+}
+
+.video-controls__toggle {
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  left: 65px;
+  width: 9px;
+  height: 9px;
+  background-color: $color-white;
+  border-radius: 50%;
+}
+
+.video-controls__buttons {
+  background-color: $color-white-smoke;
+  height: 66px;
+  padding: 22px 23px 23px 18px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.video-controls__restart {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 16px;
+  height: 20px;
+  border: none;
+  margin-right: auto;
+
+  &:hover .video-controls__restart-icon path,
+  &:focus .video-controls__restart-icon path {
+    fill: $mine-shaft;
+  }
+
+  &:active .video-controls__restart-icon path {
+    fill: rgba($mine-shaft, 0.3);
+  }
+}
+
+.video-controls__subtitles {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 32px;
+  height: 20px;
+  border: none;
+  margin-right: 35px;
+
+  &:hover .video-controls__subtitles-icon path,
+  &:focus .video-controls__subtitles-icon path {
+    fill: $mine-shaft;
+  }
+
+  &:active .video-controls__subtitles-icon path {
+    fill: rgba($mine-shaft, 0.3);
+  }
+}
+
+.video-controls__full-screen {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+}

@@ -1,0 +1,31 @@
+.video-block {
+  position: relative;
+  padding-bottom: 66px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.video-block__movie {
+  display: block;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 683px;
+  }
+}
+
+.video-block__controls {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+}

@@ -1,7 +1,7 @@
 .feedback-form {
+  box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
-  box-sizing: border-box;
   background-color: $background-basic;
 
   @media (min-width: $tablet-width) {
@@ -14,11 +14,14 @@
   @media (min-width: $desktop-width) {
     padding-left: 120px;
     padding-right: 120px;
+    width: 1200px;
   }
 }
 
 .feedback-form__button {
-  width: 100%;
+  width: 280px;
+  padding-top: 19px;
+  padding-bottom: 13px;
   display: inline-block;
   vertical-align: middle;
 
@@ -64,6 +67,8 @@
 
 .feedback-form__bottom-container .fieldset__hidden {
   color: $mine-shaft;
+  margin-top: 24px;
+  margin-bottom: 0;
 
   @media (max-width: $mobile-width-only) {
     display: none;

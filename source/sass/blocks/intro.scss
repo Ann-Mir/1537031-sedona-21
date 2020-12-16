@@ -11,7 +11,7 @@
 .intro__title {
   @include font($titles-font-size, 26px, bold);
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     font-size: $titles-big-font-size;
@@ -28,15 +28,34 @@
 .intro--photo {
   width: 290px;
   margin-right: auto;
-  margin-bottom: 20px;
+  padding-bottom: 30px;
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
     width: 458px;
-    margin-bottom: 65px;
+    padding-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 67px;
+    padding-bottom: 78px;
+  }
+}
+
+.intro--photo .intro__title {
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $titles-extra-big;
+    margin-bottom: 32px;
+  }
+}
+
+.intro--photo .intro__description {
+  line-height: 24px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .into__new-line--photo {
+    display: none;
   }
 }

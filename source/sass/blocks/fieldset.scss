@@ -1,49 +1,105 @@
 .fieldset {
+  position: relative;
   background-color: $background-basic;
   box-sizing: border-box;
   border: 0;
   margin: 0;
 
   &--user-info {
-    padding: 20px 0 25px 0;
+    padding: 20px 0 24px 0;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 58px;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 80px;
+    }
   }
 
   &--user-contacts {
-    padding: 20px 0 28px 0;
+    padding: 20px 0 25px 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 10px;
+    }
 
     @media (min-width: $desktop-width) {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-between;
+      margin-bottom: 0;
     }
   }
 
   &--trip-rate {
     padding: 20px 0 27px 0;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      margin-bottom: 40px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 100%;
+        background-color: $color-alto;
+        width: 1px;
+        height: 292px;
+      }
+    }
   }
 
   &--visited-sights {
-    padding: 15px 0 21px 0;
+    padding: 15px 0 38px 0;
 
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding-bottom: 31px;
     }
   }
 
   &--review {
     padding: 20px 0 0 0;
-    margin-bottom: 51px;
+    margin-bottom: 45px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 58px;
+      margin-bottom: 53px;
     }
   }
 }
 
 .fieldset__legend {
   @include font($titles-font-size, 26px, bold);
+  padding-top: 22px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding: 7px 0 0 0;
+    margin-bottom: 22px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .fieldset::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 114%;
+    height: 1px;
+    overflow: hidden;
+    background-color: $color-mercury;
+  }
 }
 
 .fieldset__label {
@@ -52,32 +108,94 @@
 
   &--trip-rate,
   &--visited-sights {
+    position: relative;
+
     @include font($titles-font-size, 26px, bold);
     color: $basic-font-color;
     text-transform: none;
+  }
+
+  &--trip-rate {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -21px;
+      left: -78px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: $color-white-smoke;
+    }
+  }
+
+  &--visited-sights {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -19px;
+      left: -80px;
+      width: 56px;
+      height: 56px;
+      border-radius: 7%;
+      background-color: $color-white-smoke;
+    }
   }
 }
 
 .fieldset__input {
   font-family: $basic-font-family;
+  box-sizing: border-box;
 
   @include font($titles-font-size, 26px, bold);
   text-transform: none;
   color: $basic-font-color;
+  background-color: $background-form-input;
+  height: 58px;
   margin: 0;
+  border: none;
+  align-self: flex-start;
+  padding-top: 4px;
+  padding-left: 24px;
+  flex-grow: auto;
+  width: 100%;
 
   &--user-info {
     box-sizing: border-box;
-    flex-grow: 1;
   }
 
   &--user-contacts {
     box-sizing: border-box;
-    width: 100%;
 
     @media (min-width: $desktop-width) {
       width: 315px;
     }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-mercury;
+    border: none;
+  }
+
+  &:focus-within {
+    background-color: $background-basic;
+    outline: 4px solid $color-mercury;
+  }
+
+  &--radio:hover + .fieldset__label--trip-rate::before,
+  &--radio:focus + .fieldset__label--trip-rate::before,
+  &--checkbox:hover + .fieldset__label--visited-sights::before,
+  &--checkbox:focus + .fieldset__label--visited-sights::before {
+    background-color: $color-mercury;
+  }
+
+  &--radio:active + .fieldset__label--trip-rate::before,
+  &--checkbox:active + .fieldset__label--visited-sights::before {
+    background-color: $color-alto;
+  }
+
+  &--radio:checked:active + .fieldset__label--trip-rate::after {
+    background-color: rgba($mine-shaft, 0.3);
   }
 }
 
@@ -94,22 +212,157 @@
   @include list-style-none;
 }
 
-.fieldset--user-info .fieldset__legend,
-.fieldset--user-contacts .fieldset__legend,
-.fieldset--trip-rate .fieldset__legend {
-  margin-bottom: 18px;
-}
+.fieldset--user-info .fieldset__legend {
+  margin-bottom: 0;
 
-.fieldset--user-info .fieldset__legend,
-.fieldset--trip-rate .fieldset__legend {
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 35px;
+    margin-left: -53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -120px;
   }
 }
 
 .fieldset--user-contacts .fieldset__legend {
+  margin-bottom: -5px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: -185px;
+      transform: translateY(-50%);
+      background-color: $color-alto;
+      width: 123px;
+      height: 1px;
+
+      @media (min-width: $desktop-width) {
+        left: -340px;
+        width: 280px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      right: -185px;
+      transform: translateY(-50%);
+      background-color: $color-alto;
+      width: 123px;
+      height: 1px;
+
+      @media (min-width: $desktop-width) {
+        right: -340px;
+        width: 280px;
+      }
+    }
+  }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 50px;
+  }
+}
+
+.fieldset--trip-rate .fieldset__legend {
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    margin-left: -25px;
+  }
+}
+
+.fieldset--visited-sights .fieldset__legend {
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: -185px;
+      transform: translateY(-50%);
+      background-color: $color-alto;
+      width: 123px;
+      height: 1px;
+      margin-top: 7px;
+
+      @media (min-width: $desktop-width) {
+        left: -340px;
+        width: 280px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      right: -185px;
+      transform: translateY(-50%);
+      background-color: $color-alto;
+      width: 123px;
+      height: 1px;
+      margin-top: 7px;
+
+      @media (min-width: $desktop-width) {
+        right: -340px;
+        width: 280px;
+      }
+    }
+  }
+}
+
+.fieldset--review .fieldset__legend {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 39px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: -250px;
+      transform: translateY(-50%);
+      background-color: $color-alto;
+      width: 123px;
+      height: 1px;
+
+      @media (min-width: $desktop-width) {
+        left: -355px;
+        width: 275px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      right: -250px;
+      transform: translateY(-50%);
+      background-color: $color-alto;
+      width: 123px;
+      height: 1px;
+
+      @media (min-width: $desktop-width) {
+        right: -355px;
+        width: 275px;
+      }
+    }
   }
 }
 
@@ -120,13 +373,76 @@
 
   &--user-info {
     margin-bottom: 20px;
+    justify-content: flex-start;
     flex-direction: row;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
   }
 
   &--user-contacts {
     margin-bottom: 14px;
     flex-direction: column;
-    width: 100%;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 34px;
+      right: 0;
+      background-color: $color-dark-grey;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (min-width: $tablet-width) {
+        top: 33px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 0;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 10px;
+    }
+
+    &--phone {
+      &::after {
+        width: 18px;
+        height: 18px;
+        padding: 20px 19px 20px 21px;
+        background-image: url("../img/phone-icon.svg");
+
+        @media (min-width: $desktop-width) {
+          right: 79px;
+        }
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-right: 79px;
+      }
+    }
+
+    &--mail {
+      &::after {
+        width: 16px;
+        height: 12px;
+        padding: 23px 21px;
+        background-image: url("../img/mail-icon.svg");
+      }
+    }
 
     @media (min-width: $desktop-width) {
       width: min-content;
@@ -136,16 +452,42 @@
   }
 }
 
+.fieldset__paragraph:last-child {
+  margin-bottom: 0;
+}
+
 .fieldset__paragraph--user-info .fieldset__label {
-  margin-right: 11px;
+  margin-right: 12px;
 }
 
 .fieldset__paragraph--user-contacts .fieldset__label {
+  margin-left: 22px;
   margin-bottom: 8px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 7px;
+  }
+
   @media (min-width: $desktop-width) {
+    align-self: center;
     margin-right: 17px;
     margin-bottom: 0;
+    margin-left: 0;
+  }
+}
+
+
+.fieldset__paragraph--user-contacts .fieldset__input {
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 315px;
   }
 }
 
@@ -156,36 +498,103 @@
 }
 
 .fieldset--visited-sights .fieldset__list {
+  padding-top: 6px;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    padding-right: 70px;
+    padding-left: 97px;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .fieldset--visited-sights .fieldset__option {
+  padding-top: 15px;
+  padding-left: 79px;
+  margin-bottom: 39px;
+
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 30%;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    width: min-content;
   }
+}
+
+.fieldset--visited-sights .fieldset__option:last-child {
+  margin-bottom: 0;
 }
 
 .fieldset__textarea {
   width: 100%;
+  height: 160px;
   box-sizing: border-box;
+  border: none;
+  background-color: $color-white-smoke;
   padding: 13px 20px;
   margin: 0;
+  margin-top: -5px;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     padding-top: 18px;
+  }
+}
+
+.fieldset__list--trip-rate .fieldset__option {
+  padding-left: 78px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 75px;
+    margin-bottom: 36px;
+  }
+}
+
+.fieldset__list--trip-rate .fieldset__option:not(:first-child) {
+  padding-top: 15px;
+}
+
+.fieldset__list--trip-rate .fieldset__option:last-child {
+  margin-bottom: 12px;
+}
+
+.fieldset__input--radio:checked + .fieldset__label--trip-rate::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -61px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: $mine-shaft;
+}
+
+.fieldset__input--checkbox:checked + .fieldset__label--visited-sights::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -63px;
+  width: 23px;
+  height: 16px;
+  background-image: url("../img/tick-icon.svg");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $mobile-width-only) {
+  .fieldset__new-line {
+    display: none;
   }
 }

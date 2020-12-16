@@ -1,8 +1,40 @@
+.feedback {
+  box-sizing: border-box;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
+}
+
 .feedback__intro {
-  padding: 36px 20px 16px 20px;
+  padding: 37px 20px 17px 20px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     min-height: 250px;
+    padding: 0 167px 17px 166px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 210px;
+    padding-right: 384px;
+    padding-bottom: 0;
+    padding-left: 382px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.feedback__intro .intro__title {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $titles-extra-big;
+    margin-bottom: 30px;
+  }
+}
+
+.feedback__intro .intro__description {
+  line-height: 24px;
 }
