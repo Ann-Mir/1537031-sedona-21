@@ -31,7 +31,9 @@
     @media (min-width: $desktop-width) {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-between;
+      margin-bottom: 0;
     }
   }
 
@@ -413,7 +415,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 0;
+      margin-bottom: 10px;
     }
 
     &--phone {
