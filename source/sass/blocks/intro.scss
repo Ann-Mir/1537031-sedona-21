@@ -28,16 +28,16 @@
 .intro--photo {
   width: 290px;
   margin-right: auto;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
     width: 458px;
-    margin-bottom: 65px;
+    padding-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 78px;
+    padding-bottom: 78px;
   }
 }
 
