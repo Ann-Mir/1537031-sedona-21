@@ -21,8 +21,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 648px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     background: transparent url("../img/video-tablet@1x.jpg") no-repeat 0 0;
 
     @media (min-resolution: 2dppx) {
@@ -50,6 +50,6 @@
 
   @media (min-width: $tablet-width) {
     left: 0;
-    bottom: 0;
+    bottom: 93px;
   }
 }
