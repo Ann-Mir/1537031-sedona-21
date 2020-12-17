@@ -11,11 +11,19 @@
   justify-content: flex-start;
   align-items: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-inner-back-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     height: 290px;
     padding-top: 95px;
     background-image: url("../img/promo-back-inner-tablet@1x.jpg");
     resize: both;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-back-inner-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -23,6 +31,10 @@
     margin-bottom: 62px;
     height: 301px;
     background-image: url("../img/promo-inner-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-back-inner-desktop@2x.jpg");
+    }
   }
 
   &--catalog {
