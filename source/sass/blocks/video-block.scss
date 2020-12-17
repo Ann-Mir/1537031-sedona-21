@@ -7,6 +7,11 @@
     height: 500px;
     padding-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    height: 683px;
+  }
 }
 
 .video-block__movie {
@@ -32,8 +37,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 800px;
-    height: 683px;
     background: transparent url("../img/video-desktop@1x.jpg") no-repeat 0 0;
 
     @media (min-resolution: 2dppx) {
