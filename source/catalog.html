@@ -44,7 +44,11 @@
             <li class="photos-list__item  photos-list__item--highlighted">
               <article class="photos-list__article photo-article">
                 <a class="photo-article__link" href="#">
-                  <img class="photo-article__image" src="img/sunset-road-mobile@1x.jpg" width="280" height="280" alt="Фотографяи дороги и гор на закате">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/sunset-road-desktop@1x.jpg 1x, img/sunset-road-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/sunset-road-tablet@1x.jpg 1x, img/sunset-road-tablet@2x.jpg 2x">
+                    <img class="photo-article__image" src="img/sunset-road-mobile@1x.jpg" srcset="img/sunset-road-mobile@2x.jpg 2x" width="280" height="280" alt="Фотографяи дороги и гор на закате">
+                  </picture>
                 </a>
                 <div class="photo-article__about">
                   <div class="photo-article__title-container">
@@ -61,7 +65,11 @@
             <li class="photos-list__item">
               <article class="photos-list__article photo-article">
                 <a class="photo-article__link" href="#">
-                  <img class="photo-article__image" src="img/flora-mobile@1x.jpg" width="280" height="280" alt="Фотография кактуса на фоне гор">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/flora-desktop@1x.jpg 1x, img/flora-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/flora-tablet@1x.jpg 1x, img/flora-tablet@2x.jpg 2x">
+                    <img class="photo-article__image" src="img/flora-mobile@1x.jpg" srcset="img/flora-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография кактуса на фоне гор">
+                  </picture>
                 </a>
                 <div class="photo-article__about">
                   <div class="photo-article__title-container">
@@ -78,8 +86,12 @@
             <li class="photos-list__item">
               <article class="photos-list__article photo-article">
                 <a class="photo-article__link" href="#">
-                  <img class="photo-article__image" src="img/forest-mobile@1x.jpg" width="280" height="280" alt="Фотография леса и дороги">
-                </a>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/forest-desktop@1x.jpg 1x, img/forest-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/forest-tablet@1x.jpg 1x, img/forest-tablet@2x.jpg 2x">
+                    <img class="photo-article__image" src="img/forest-mobile@1x.jpg" srcset="img/forest-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография леса и дороги">
+                  </picture>
+                  </a>
                 <div class="photo-article__about">
                   <div class="photo-article__title-container">
                     <h3 class="photo-article__description">Дорога на север</h3>
@@ -95,7 +107,11 @@
             <li class="photos-list__item">
               <article class="photos-list__article photo-article">
                 <a class="photo-article__link" href="#">
-                  <img class="photo-article__image" src="img/devil-rocks-mobile@1x.jpg"  width="280" height="280" alt="Фотография Моста Дьявола">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/devil-rocks-desktop@1x.jpg 1x, img/devil-rocks-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/devil-rocks-tablet@1x.jpg 1x, img/devil-rocks-tablet@2x.jpg 2x">
+                    <img class="photo-article__image" src="img/devil-rocks-mobile@1x.jpg" srcset="img/devil-rocks-mobile@2x.jpg 2x"  width="280" height="280" alt="Фотография Моста Дьявола">
+                  </picture>
                 </a>
                 <div class="photo-article__about">
                   <div class="photo-article__title-container">
@@ -118,8 +134,10 @@
             <p class="intro__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="promo-video__container video-block">
-            <video class="video-block__movie" width="320" height="201" poster="img/video-mobile@1x.jpg">
-              <source src="https://via.placeholder.com/320x201" type="video/mp4">
+            <video class="video-block__movie" width="320" height="201">
+              <source src="https://via.placeholder.com/800x683" type="video/mp4" media="(min-width: 1200px)">
+              <source src="https://via.placeholder.com/648x500" type="video/mp4" media="(min-width: 768px)">
+              <source src="https://via.placeholder.com/320x201" type="video/mp4" media="(max-width: 767px)">
             </video>
             <div class="video-block__controls video-controls">
               <div class="video-controls__range-controls">

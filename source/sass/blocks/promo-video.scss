@@ -44,4 +44,8 @@
   max-height: 683px;
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
