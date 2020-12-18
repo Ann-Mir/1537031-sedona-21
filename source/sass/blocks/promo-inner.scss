@@ -3,7 +3,10 @@
   width: 100%;
   min-height: 158px;
   box-sizing: border-box;
-  background: url("../img/promo-inner-back-mobile@1x.jpg") no-repeat 50% 100%;
+  background: $background-spare;
+  background-image: url("../img/promo-inner-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
   background-size: cover;
   padding-top: 52px;
   display: flex;
