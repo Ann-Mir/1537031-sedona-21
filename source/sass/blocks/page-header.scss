@@ -18,10 +18,8 @@
   @media (min-width: $tablet-width) {
     top: 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-header__logo {
+  @media (min-width: $desktop-width) {
     width: 187px;
     height: 97px;
   }
