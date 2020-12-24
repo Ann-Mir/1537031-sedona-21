@@ -107,7 +107,17 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">город Седона на карте</h2>
-          <img class="map__map-image" src="https://via.placeholder.com/320x350" width="320" height="350" alt="город Седона в штате Аризона, США">
+          <div class="map__img-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile@1x@1x.webp 1x, img/map-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="map__map-image" src="img/map-mobile@1x.jpg" alt="город Седона в штате Аризона, США">
+            </picture>
+            <iframe class="map__iframe" title="Город Седона в штате Аризона, США на интерактивной карте" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676192.3041309745!2d-111.77505470305847!3d34.86092341691632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sru!4v1608806977249!5m2!1sen!2sru" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
         </section>
       </main>
       <footer class="page-footer">
