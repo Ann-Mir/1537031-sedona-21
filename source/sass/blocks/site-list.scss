@@ -20,6 +20,7 @@
 
 .site-list__item {
   width: 100%;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 20%;
@@ -39,7 +40,7 @@
   height: 100%;
   display: block;
   box-sizing: border-box;
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {

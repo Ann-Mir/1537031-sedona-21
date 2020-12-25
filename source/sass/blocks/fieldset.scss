@@ -189,6 +189,11 @@
     background-color: $color-mercury;
   }
 
+  &--radio:focus + .fieldset__label--trip-rate::before,
+  &--checkbox:focus + .fieldset__label--visited-sights::before {
+    outline: thin dotted;
+  }
+
   &--radio:active + .fieldset__label--trip-rate::before,
   &--checkbox:active + .fieldset__label--visited-sights::before {
     background-color: $color-alto;

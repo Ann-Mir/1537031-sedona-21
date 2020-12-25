@@ -1,0 +1,126 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background-color: $background-basic;
+  box-shadow: 0 7px 15px rgba($color-black, 0.15);
+  box-sizing: border-box;
+  display: block;
+  width: 320px;
+
+  &--failure {
+    padding: 40px 42px 35px 41px;
+
+    @media (max-width: $mobile-width-only) {
+      min-height: 280px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 52px 47px 49px 46px;
+      width: 400px;
+      min-height: 347px;
+    }
+  }
+
+  &--success {
+    @media (min-width: $tablet-width) {
+      width: 640px;
+    }
+  }
+
+  &--close {
+    display: none;
+  }
+}
+
+.modal__top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
+}
+
+.modal--success .modal__top-container {
+  padding: 38px 39px 28px 37px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 53px 99px 30px 97px;
+  }
+}
+
+.modal__title {
+  @include font($titles-font-size, 26px, bold);
+  margin-top: 0;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    @include font($titles-extra-big, 40px, bold);
+  }
+}
+
+.modal--failure .modal__title {
+  @media (min-width: $tablet-width) {
+    max-width: 214px;
+  }
+}
+
+.modal__text {
+  @include plain-text;
+  line-height: 24px;
+  margin: 0;
+}
+
+.modal--failure .modal__text {
+  @media (min-width: $tablet-width) {
+    max-width: 274px;
+  }
+}
+
+.modal__bottom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__close-button {
+  @include font($titles-font-size, 26px, bold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 58px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $titles-big-font-size;
+    width: 272px;
+  }
+}
+
+.modal--success .modal__bottom-container {
+  background-color: $color-white-smoke;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px 91px;
+  }
+}
+
+.modal--success .modal__close-button {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
+}

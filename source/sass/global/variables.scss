@@ -30,6 +30,8 @@ $color-darken-grey: #5c6870;
 $color-dark-charcoal: #333333;
 $color-pine-cone: #766357;
 $color-kabul: #604e43;
+$color-link-water: #e4f1f9;
+$color-gradient: linear-gradient(45deg, rgba(244, 177, 164, 1) 0%, rgba(129, 179, 211, 1) 35%, rgba(147, 112, 112, 1) 100%);
 
 //Basic
 $basic-font-family: "PT Sans", "Arial", sans-serif;
@@ -49,6 +51,7 @@ $background-body: $mercury;
 $background-highlighted: $color-light-blue;
 $background-features: $color-light-grey;
 $background-form-input: $color-white-smoke;
+$background-spare: $color-gradient;
 
 $basic-button-color: $color-light-blue;
 $basic-button-hover: $color-bright-blue;

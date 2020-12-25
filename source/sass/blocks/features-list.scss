@@ -216,6 +216,7 @@
 }
 
 .features-list__item--house .features-list__img-container {
+  background-color: $background-highlighted;
   background-image: url("../img/features-city-mobile@1x.jpg");
 
   @media (min-resolution: 2dppx) {
@@ -240,6 +241,7 @@
 }
 
 .features-list__item--rocks .features-list__img-container {
+  background-color: $background-highlighted;
   background-image: url("../img/rocks-mobile@1x.jpg");
 
   @media (min-resolution: 2dppx) {
