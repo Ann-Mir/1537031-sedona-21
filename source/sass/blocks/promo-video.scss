@@ -5,6 +5,10 @@
     padding-right: 60px;
     padding-left: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+  }
 }
 
 .promo-video__intro {
@@ -15,11 +19,7 @@
 
   @media (min-width: $tablet-width) {
     width: 445px;
-    padding-bottom: 68px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 77px;
+    padding-bottom: 79px;
   }
 }
 

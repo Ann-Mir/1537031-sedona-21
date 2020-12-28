@@ -1,7 +1,28 @@
 .likes-button {
+  position: relative;
   cursor: pointer;
+  background-color: transparent;
   box-sizing: border-box;
   border: none;
   width: 23px;
   height: 21px;
+}
+
+.likes-button__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 21px;
+  opacity: 0.3;
+
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+  }
+}
+
+.likes-button__icon path {
+  @media (min-width: $desktop-width) {
+    fill: $color-white;
+  }
 }
