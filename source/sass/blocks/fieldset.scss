@@ -598,6 +598,10 @@
   background-repeat: no-repeat;
 }
 
+.fieldset__input--checkbox:checked:active + .fieldset__label--visited-sights::after {
+  opacity: 0.3;
+}
+
 @media (max-width: $mobile-width-only) {
   .fieldset__new-line {
     display: none;
