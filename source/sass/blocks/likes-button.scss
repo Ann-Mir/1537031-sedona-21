@@ -14,15 +14,10 @@
   left: 0;
   width: 23px;
   height: 21px;
-  opacity: 0.3;
+  fill: rgba($color-black, 0.3);
 
   @media (min-width: $desktop-width) {
     opacity: 1;
-  }
-}
-
-.likes-button__icon path {
-  @media (min-width: $desktop-width) {
     fill: $color-white;
   }
 }

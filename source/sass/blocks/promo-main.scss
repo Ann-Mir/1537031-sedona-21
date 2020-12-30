@@ -8,6 +8,7 @@
   background: $background-spare;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -16,6 +17,7 @@
   @media (max-width: $mobile-width-only) {
     padding-top: 90px;
     background-image: url("../img/promo-back-mobile@1x.jpg");
+    background-size: contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-back-mobile@2x.jpg");
@@ -25,6 +27,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/promo-back-tablet@1x.jpg");
     height: 518px;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-back-tablet@2x.jpg");

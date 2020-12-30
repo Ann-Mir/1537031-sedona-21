@@ -127,6 +127,11 @@
   position: absolute;
   top: 0;
   left: 0;
+  fill: $color-darken-grey;
+
+  @media (min-width: $tablet-width) {
+    fill: $color-white;
+  }
 }
 
 .video-controls__icon path {
