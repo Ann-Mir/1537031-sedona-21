@@ -4,11 +4,17 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+
+  @media (min-width: $tablet-width) {
+    height: min-content;
+    align-items: center;
+  }
 }
 
 .likes-container__counter {
   @include font($basic-font-size, 24px, bold);
   margin: 0;
+  margin-top: 2px;
   display: flex;
   flex-direction: flex-start;
 
@@ -18,5 +24,6 @@
 }
 
 .likes-container__button {
-  margin-right: 14px;
+  margin-top: -3px;
+  margin-right: 10px;
 }
