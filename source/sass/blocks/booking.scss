@@ -1,7 +1,7 @@
 .booking {
   text-align: center;
   background: $background-basic;
-  padding: 35px 20px 49px 20px;
+  padding: 33px 20px 49px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 43px;
   }
 }
 
@@ -63,4 +63,6 @@
 .booking__link {
   width: 100%;
   max-width: 458px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }

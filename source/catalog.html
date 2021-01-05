@@ -18,7 +18,7 @@
             <img src="img/logo-mobile.svg" alt="Герб города Седона">
           </picture>
         </a>
-        <nav class="page-header__main-nav main-nav  main-nav--opened main-nav--nojs">
+        <nav class="page-header__main-nav main-nav main-nav--open main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню или закрыть открытое меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -38,9 +38,12 @@
       </header>
       <main class="page-main">
         <section class="promo-inner promo-inner--catalog">
-          <img class="promo-inner__title" src="img/sedona-label.svg" width="229" height="39" alt="Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/text-sedona-desktop.svg">
+            <img class="promo-inner__title" src="img/sedona-label.svg" width="229" height="39" alt="Sedona">
+          </picture>
         </section>
-        <div class="intro intro--photo">
+        <div class="page-main__intro intro intro--photo">
           <p class="intro__title">Фото и Видео</p>
           <p class="intro__description">Не можете решиться на путешествие из-за курса? <br class="into__new-line--photo">Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
@@ -79,7 +82,7 @@
               <article class="photos-list__article photo-article">
                 <a class="photo-article__link" href="#">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/flora-desktop@1x.webp 1x, img/sunset-road-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/flora-desktop@1x.webp 1x, img/flora-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/flora-tablet@1x.webp 1x, img/flora-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/flora-mobile@1x.webp 1x, img/flora-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/flora-desktop@1x.jpg 1x, img/flora-desktop@2x.jpg 2x">

@@ -18,7 +18,7 @@
             <img src="img/logo-mobile.svg" alt="Герб города Седона">
           </picture>
         </a>
-        <nav class="page-header__main-nav main-nav  main-nav--opened main-nav--nojs">
+        <nav class="page-header__main-nav main-nav main-nav--open main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню или закрыть открытое меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -38,7 +38,10 @@
       </header>
       <main class="page-main">
         <section class="promo-inner promo-inner--form">
-          <img class="promo-inner__title" src="img/sedona-label.svg" width="229" height="39" alt="Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/text-sedona-desktop.svg">
+            <img class="promo-inner__title" src="img/sedona-label.svg" width="229" height="39" alt="Sedona">
+          </picture>
         </section>
         <section class="feedback">
           <div class="feedback__intro intro">
@@ -113,11 +116,11 @@
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--review fieldset fieldset--review">
               <legend class="fieldset__legend">Опишите свои эмоции:</legend>
-              <textarea class="fieldset__textarea" id="review" name="review">Опишите подробно все свои восторги</textarea>
+              <textarea class="fieldset__textarea" id="review" name="review" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <div class="feedback-form__bottom-container">
               <button class="button feedback-form__button" type="submit">Отправить отзыв</button>
-              <p class="feedback-form__hidden">&#42;&mdash; Обязательные поля</p>
+              <p class="feedback-form__hidden">&#42; &mdash; Обязательные поля</p>
             </div>
           </form>
         </section>

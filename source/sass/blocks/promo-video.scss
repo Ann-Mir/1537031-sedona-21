@@ -1,5 +1,5 @@
 .promo-video {
-  margin-bottom: 39px;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     padding-right: 60px;
@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 85px;
+    padding-bottom: 45px;
   }
 }
 
@@ -21,6 +21,10 @@
     width: 445px;
     padding-bottom: 79px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 77px;
+  }
 }
 
 .promo-video__intro .intro__title {
@@ -28,10 +32,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: $titles-extra-big;
+    margin-bottom: 32px;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 34px;
   }
 }
 

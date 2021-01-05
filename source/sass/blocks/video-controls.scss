@@ -30,7 +30,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 540px;
+    padding-right: 0;
+    width: 562px;
   }
 }
 
@@ -57,7 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 23%;
+    width: 21%;
   }
 }
 
@@ -91,7 +92,7 @@
     position: absolute;
     bottom: 35px;
     left: 0;
-    padding: 0 41px 0 35px;
+    padding: 0 40px 0 35px;
     width: 100%;
     height: min-content;
   }
@@ -115,6 +116,10 @@
     height: 20px;
     border: none;
     margin-right: 31px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 29px;
+    }
   }
 
   &--full-screen {

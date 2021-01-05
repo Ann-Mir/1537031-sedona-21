@@ -75,6 +75,10 @@
     font-size: $titles-big-font-size;
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .features-sublist__description {

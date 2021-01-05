@@ -27,9 +27,9 @@
 
 .intro--photo {
   width: 290px;
-  margin-right: auto;
-  padding-bottom: 30px;
-  margin-left: auto;
+  padding-right: 14px;
+  padding-bottom: 31px;
+  padding-left: 16px;
 
   @media (min-width: $tablet-width) {
     width: 458px;
@@ -37,7 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 78px;
+    padding-bottom: 79px;
   }
 }
 
