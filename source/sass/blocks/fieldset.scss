@@ -426,36 +426,36 @@
       padding-bottom: 10px;
     }
 
-    &--phone {
-      &::after {
-        width: 18px;
-        height: 18px;
-        padding: 20px 19px 20px 21px;
-        background-image: url("../img/phone-icon.svg");
-
-        @media (min-width: $desktop-width) {
-          right: 79px;
-        }
-      }
-
-      @media (min-width: $desktop-width) {
-        padding-right: 79px;
-      }
-    }
-
-    &--mail {
-      &::after {
-        width: 16px;
-        height: 12px;
-        padding: 23px 21px;
-        background-image: url("../img/mail-icon.svg");
-      }
-    }
-
     @media (min-width: $desktop-width) {
       width: min-content;
       flex-direction: row;
       justify-content: space-between;
+    }
+  }
+
+  &--phone {
+    &::after {
+      width: 18px;
+      height: 18px;
+      padding: 20px 19px 20px 21px;
+      background-image: url("../img/phone-icon.svg");
+
+      @media (min-width: $desktop-width) {
+        right: 79px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 79px;
+    }
+  }
+
+  &--mail {
+    &::after {
+      width: 16px;
+      height: 12px;
+      padding: 23px 21px;
+      background-image: url("../img/mail-icon.svg");
     }
   }
 }
