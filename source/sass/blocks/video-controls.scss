@@ -1,7 +1,6 @@
 .video-controls {
   width: 87.5%;
   height: 111px;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -148,8 +147,16 @@
 .video-controls__button:hover .video-controls__icon,
 .video-controls__button:focus .video-controls__icon {
   fill: $mine-shaft;
+
+  @media (min-width: $tablet-width) {
+    fill: rgba($color-white, 0.6);
+  }
 }
 
 .video-controls__button:active .video-controls__icon {
   fill: rgba($mine-shaft, 0.3);
+
+  @media (min-width: $tablet-width) {
+    fill: rgba($color-white, 0.3);
+  }
 }

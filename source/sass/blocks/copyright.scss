@@ -14,11 +14,11 @@
   margin-top: -5px;
 }
 
-.copyright__link:hover .copyright__logo path,
-.copyright__link:focus .copyright__logo path {
+.copyright__link:hover .copyright__logo,
+.copyright__link:focus .copyright__logo {
   fill: $basic-button-color;
 }
 
-.copyright__link:active .copyright__logo path {
+.copyright__link:active .copyright__logo {
   fill: rgba($color-black, 0.3);
 }

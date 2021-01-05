@@ -2,3 +2,39 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.page-main__photos {
+  margin: 0 auto 32px auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 63px;
+  }
+}
+
+.page-main__promo-inner {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
+  }
+
+  &--catalog {
+    margin-bottom: 32px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 103px;
+    }
+  }
+}
+
+.page-main__promo-main {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
+}
