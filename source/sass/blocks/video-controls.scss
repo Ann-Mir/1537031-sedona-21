@@ -63,6 +63,7 @@
 
 .video-controls__toggle {
   cursor: pointer;
+  z-index: 1;
   position: absolute;
   top: 20px;
   left: 58px;
@@ -70,6 +71,9 @@
   height: 9px;
   background-color: $color-white;
   border-radius: 50%;
+  border: none;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     top: 42px;
