@@ -33,20 +33,6 @@
 
   &--trip-rate {
     padding: 20px 0 27px 0;
-
-    @media (min-width: $tablet-width) {
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 9px;
-        left: 100%;
-        background-color: $color-alto;
-        width: 1px;
-        height: 292px;
-      }
-    }
   }
 
   &--visited-sights {
@@ -73,24 +59,28 @@
   @include font($titles-font-size, 26px, bold);
   padding-top: 22px;
   text-align: center;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    margin-right: auto;
+    margin-left: auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: calc((320px - 100%) / 2 * -1);
+      width: 100vw;
+      height: 1px;
+      overflow: hidden;
+      background-color: $color-mercury;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     padding: 7px 0 0 0;
     margin-bottom: 22px;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .fieldset::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -20px;
-    width: 114%;
-    height: 1px;
-    overflow: hidden;
-    background-color: $color-mercury;
   }
 }
 
@@ -146,8 +136,7 @@
   margin: 0;
   border: none;
   align-self: flex-start;
-  padding-top: 3px;
-  padding-left: 23px;
+  padding: 15px 23px;
   flex-grow: auto;
   width: 100%;
 
@@ -204,6 +193,7 @@
   @include font($titles-font-size, 26px, bold);
   text-transform: none;
   color: $basic-font-color;
+  opacity: 1;
 }
 
 .fieldset__list {
@@ -214,12 +204,8 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
+    text-align: left;
     margin-bottom: 35px;
-    margin-left: -53px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: -120px;
   }
 }
 
@@ -229,6 +215,8 @@
   @media (min-width: $tablet-width) {
     position: relative;
     margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
 
     &::before {
       content: "";
@@ -277,7 +265,28 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
-    margin-left: -25px;
+    text-align: left;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 8px;
+      left: 323px;
+      width: 1px;
+      height: 292px;
+      background-color: $color-alto;
+
+      @media (min-width: $desktop-width) {
+        left: 480px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-left: 80px;
   }
 }
 
@@ -286,6 +295,8 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    margin-right: auto;
+    margin-left: auto;
 
     &::before {
       content: "";
@@ -332,6 +343,8 @@
 .fieldset--review .fieldset__legend {
   @media (min-width: $tablet-width) {
     position: relative;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 39px;
 
     &::before {
@@ -491,7 +504,6 @@
     margin-left: 0;
   }
 }
-
 
 .fieldset__paragraph--user-contacts .fieldset__input {
   @media (max-width: $mobile-width-only) {
