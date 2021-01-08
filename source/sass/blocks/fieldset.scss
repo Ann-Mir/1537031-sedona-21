@@ -137,8 +137,8 @@
   border: none;
   align-self: flex-start;
   padding: 15px 23px;
-  flex-grow: auto;
-  width: 100%;
+  flex-grow: 1;
+  width: 100px;
 
   &--user-info {
     box-sizing: border-box;
